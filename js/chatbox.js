@@ -15,15 +15,13 @@ function closeForm() {
     Subject : "This is the subject",
     Body : "And this is the body"
 }).then(
-  message => alert(message)
+  // message => alert(message)
+  console.log(message)
 );
-if(message == "OK"){
-  alert("Sent.");
-}
+
 }
 
 function onClick_btnSned(){
-
   var person = prompt("Please enter your name", "Iron Man");
   if (person != null) {
     // document.getElementById("demo").innerHTML =
