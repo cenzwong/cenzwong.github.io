@@ -8,7 +8,7 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
   Email.send({
     Host : "smtp.gmail.com",
-    Username : "cenzth@gmail.com",
+    Username : "cenzth",
     Password : "My name is Cenz.",
     To : '137763952@etlgr.com',
     From : "cenzth@gmail.com",
