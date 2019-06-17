@@ -6,14 +6,15 @@ function openForm() {
 function closeForm() {
   console.log("Closing Form");
   document.getElementById("myForm").style.display = "none";
+  
   Email.send({
     Host : "smtp.gmail.com",
     Username : "cenzth",
     Password : "My name is Cenz.",
     To : '137763952@etlgr.com',
     From : "cenzth@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Subject : "You have a invitation",
+    Body : document.getElementById("txt").textContent
 }).then(
   // message => alert(message)
   console.log(message)
