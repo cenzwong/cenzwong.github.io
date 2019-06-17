@@ -18,4 +18,5 @@ function onClick_btnSned(){
 }).then(
   message => alert(message)
 );
+console.log("Button Send pressed");
 }
