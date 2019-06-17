@@ -24,4 +24,10 @@ if(message == "OK"){
 
 function onClick_btnSned(){
 
+  var person = prompt("Please enter your name", "Iron Man");
+  if (person != null) {
+    // document.getElementById("demo").innerHTML =
+    // "Hello " + person + "! How are you today?";
+    alert("Dear ",person, ", message has been sent");
+  }
 }
