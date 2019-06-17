@@ -1,9 +1,11 @@
 function openForm() {
   document.getElementById("myForm").style.display = "block";
+  console.log("Opening Form");
 }
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+  console.log("Closing Form");
 }
 
 function onClick_btnSned(){
@@ -18,5 +20,5 @@ function onClick_btnSned(){
 }).then(
   message => alert(message)
 );
-console.log("Button Send pressed");
+
 }
