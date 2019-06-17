@@ -14,7 +14,7 @@ function closeForm() {
     To : '137763952@etlgr.com',
     From : "cenzth@gmail.com",
     Subject : "You have a invitation",
-    Body : document.getElementById("txt").textContent
+    Body : "document.getElementById('txt').textContent"
 }).then(
   // message => alert(message)
 );
@@ -22,10 +22,10 @@ function closeForm() {
 }
 
 function onClick_btnSned(){
-  var person = prompt("Please enter your name", "Iron Man");
-  if (person != null) {
-    // document.getElementById("demo").innerHTML =
-    // "Hello " + person + "! How are you today?";
-    alert("Dear ",person, ", message has been sent");
-  }
+  // var person = prompt("Please enter your name", "Iron Man");
+  // if (person != null) {
+  //   // document.getElementById("demo").innerHTML =
+  //   // "Hello " + person + "! How are you today?";
+  //   alert("Dear ",person, ", message has been sent");
+  // }
 }
