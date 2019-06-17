@@ -16,6 +16,7 @@ function closeForm() {
     Body : "And this is the body"
 }).then(
   message => alert(message)
+  message => alert("Sent.")
 );
 }
 
