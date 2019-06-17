@@ -6,7 +6,7 @@ function openForm() {
 function closeForm() {
   console.log("Closing Form");
   document.getElementById("myForm").style.display = "none";
-  console.log(document.getElementById("txt").textContent);
+  console.log(document.getElementById("txt").textContent());
   Email.send({
     Host : "smtp.gmail.com",
     Username : "cenzth",
@@ -17,7 +17,6 @@ function closeForm() {
     Body : document.getElementById("txt").textContent
 }).then(
   // message => alert(message)
-  console.log(message)
 );
 
 }
