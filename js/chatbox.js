@@ -24,12 +24,12 @@ function onClick_btnSned(){
     Host : "smtp.gmail.com",
     Username : "cenzth@gmail.com",
     Password : "My name is Cenz.",
-    To : '137763952@etlgr.com',
+    To : 'cenzth@gmail.com',
     From : "cenzth@gmail.com",
     Subject : "This is the subject",
     Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+  }).then(
+    message => alert(message)
+  );
 
 }
