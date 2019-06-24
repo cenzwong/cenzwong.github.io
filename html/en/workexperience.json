@@ -1,0 +1,52 @@
+{
+    Position_Company: [
+        "Summer Intern / Wuxi Murata Electronics Co., Ltd. 日本村田電子有限公司(無錫)",
+        "Summer Intern (Embedded Middleware Team) / Shenzhen Skyworth-RGB Electronic Co Ltd",
+        "Electronic Engineer Trainee / RF Tech Ltd. - ITE (Holdings) Limited",
+        "Summer Intern (Millimeter wave product team電磁感知事業部 毫米波產品部)/ Nuctech Company Limited",
+        "Part-time tutor / 香港機械人學院 Robot Insitute of Hong Kong"
+    ], 
+    Link: [
+        "https://www.murata.com/",
+        "http://investor.skyworth.com/en/index.php",
+        "http://www.hkite.com/",
+        "http://www.nuctech.com/",
+        "https://www.rihk.com/"
+    ], 
+    Date: [
+        "20 Jul 2019 - 30 Aug 2019",
+        "3 Jun 2019 - 11 Jul 2019",
+        "Aug 2018 - May 2019",
+        "Jul 2018 - Aug 2018",
+        "2017 - 2018"
+    ], 
+    Outcome: [
+        [
+            ".",
+            ".",
+            "."            
+        ],
+        [
+            ".",
+            ".",
+            "."
+        ],
+        [
+            "Research and product development of LoRa, NB-IoT;",
+            "PCB manufacture including Schematics, Layout and Soldering;",
+            "Machine assembly and Coordination;"
+        ],
+        [
+            "Preparation work of Machine Learning;",
+            "Data collation and Analysis;",
+            "Tools building for desktop automation;"
+        ],
+        [
+            "Teaching LEGO Mindstorms with NXT, EV3;",
+            "Teaching Arduino and Basic Electronics for Mini-Robocon 2018;",
+            "Project Implementer;"
+        ]
+    ]
+}
+
+//if current <span class="w3-tag w3-teal w3-round">Current</span>
