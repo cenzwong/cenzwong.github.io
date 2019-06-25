@@ -85,8 +85,8 @@ var workExJson =
 ;
 
 var scoreSkillJson = [
-    ["Adobe Photoshop","90"],
-    ["Photography","80"],
+    ["STM32/Atmel/Arduino","80"],
+    ["PCB Schematic/Layout","70"],
     ["Illustrator","75"],
     ["Media","50"] 
 ]
@@ -187,9 +187,7 @@ function displayScoreLang() {
 }
 
 function displayWorkEx() {
-    var i = 0;
-    var len = workExJson.length;
-    for(i in workExJson){
+    for(let i in workExJson){
         document.write("<div class=\"w3-container\">");
         document.write("<h5 class=\"w3-opacity\"><b>"+workExJson[i].Pos_Com+"</b>");
         document.write("<a href=\""+workExJson[i].Link+"\" target=\"_blank\">");
@@ -200,14 +198,13 @@ function displayWorkEx() {
         document.write(workExJson[i].Date);
         document.write("</h6>");
         document.write("<ul style=\"list-style-type:circle; padding: 0px;margin: 15px;\">");
-        var j = 0;
-        for(j in workExJson[i].Outcome){
+        for(let j in workExJson[i].Outcome){
             document.write("<li>");
             document.write(workExJson[i].Outcome[j]);
             document.write("</li>");
         }
         document.write("</ul>");
-        if(i == len-1){
+        if(i == workExJson.length-1){
             document.write("<br>");
         }else{
             document.write("<hr>");
