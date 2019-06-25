@@ -81,9 +81,11 @@ var scoreLangJson =  {
         ["Mandarian",urlJSON['Putonhua']],
         ["English",urlJSON['English']]
     ],
-    "computer":[
-        ["C/C++/ Embedded","90"],
-        ["Matlab / Octave","76"],
-        ["Python","60"]            
-    ]
 };
+
+var scoreSkillJson = [
+    [urlJSON['Skill_1'],urlJSON['Skill_1_num']],
+    [urlJSON['Skill_2'],urlJSON['Skill_2_num']],
+    [urlJSON['Skill_3'],urlJSON['Skill_3_num']]
+]
+;
