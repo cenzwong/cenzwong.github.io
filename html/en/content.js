@@ -86,12 +86,43 @@ var workExJson =
 ;
 
 var scoreSkillJson = [
-    ["C/C++/ Embedded","90"],
-    ["Matlab / Octave","76"],
-    ["Python","60"]  
-];
+    ["Adobe Photoshop","90"],
+    ["Photography","80"],
+    ["Illustrator","75"],
+    ["Media","50"] 
+]
+;
 
+var infoJson = 
+    [
+        {
+            "icon":"fa-briefcase",
+            "word":"Electronic and Information Engineering Student"
+        },
+        {
+            "icon":"fa-home",
+            "word":"Hong Kong, China"
+        },
+        {
+            "icon":"fa-envelope",
+            "word":"<a href=\"mailto:webmaster@example.com\">cenz@engineer.com</a>"
+        },
+        {
+            "icon":"fa-phone",
+            "word":"+852 6158 5094, (+86 150 0204 3095)"
+        }
+    ]
+;
 
+function displayPersonalInfo(){
+    var i = 0;
+    var len = infoJson.length;
+    for(i in infoJson){
+        document.write("<p><i class=\"fa "+ infoJson[i].icon +" fa-fw w3-margin-right w3-large w3-text-teal\"></i>");
+        document.write(infoJson[i].word+"</p>");
+    }
+    
+}
 
 function displayEduEx() {
     var i = 0;
@@ -106,12 +137,11 @@ function displayEduEx() {
         document.write("<h6 class=\"w3-text-teal\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>");
         document.write(eduExJson[i].Date);
         document.write("</h6>");
-        
         document.write("<p>"+eduExJson[i].Description+"</p>");
         if(i == len-1){
-            document.write("<br>");
+            document.write("<br />");
         }else{
-            document.write("<hr>");
+            document.write("<hr />");
         }
         document.write("</div>");
     }
