@@ -9,7 +9,7 @@
 <script>
 //get the whole URL down
 var getURL_raw = window.location.search.slice(1,window.location.search.length-1);
-
+document.write(getURL_raw);
 //replace "+" to " "   TODO: I don't know how to keep replace all the things.....
 getURL_raw = getURL_raw.replace("+"," ");
 getURL_raw = getURL_raw.replace("+"," ");
