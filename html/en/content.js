@@ -124,6 +124,10 @@ function displayPersonalInfo(){
     
 }
 
+
+
+// code
+
 function displayEduEx() {
     var i = 0;
     var len = eduExJson.length;
