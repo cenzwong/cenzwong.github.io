@@ -11,7 +11,7 @@ var eduExJson =
             "Link":"http://www.yll.edu.hk/",
             "Date":"3 Jun 2019 - 11 Jul 2019",
             "Description":"<p>Secondary School</p>\
-                        <p>Subject taken: Physics, Chemistry, Biology, MATHEMATICS Extended Part Module 2 (ALgebra and Calculus)</p>\
+                        <p>Subject taken: Physics, Chemistry, Biology, MATHEMATICS Extended Part Module 2 (Algebra and Calculus)</p>\
                         "
         }
     ]
@@ -37,9 +37,10 @@ var workExJson =
             "Link":"https://www.murata.com/",
             "Date":"20 Jul 2019 - 30 Aug 2019",
             "Outcome":[
-                ".",
-                ".",
-                "."
+                "You can add as many as you like",
+                "2st sentences",
+                "3st sentences",
+                "4st sentences"
             ]
         },
         {
@@ -47,8 +48,6 @@ var workExJson =
             "Link":"http://investor.skyworth.com/en/index.php",
             "Date":"3 Jun 2019 - 11 Jul 2019",
             "Outcome":[
-                ".",
-                ".",
                 "."
             ]
         },
@@ -201,17 +200,12 @@ function displayWorkEx() {
         document.write(workExJson[i].Date);
         document.write("</h6>");
         document.write("<ul style=\"list-style-type:circle; padding: 0px;margin: 15px;\">");
-
+        var j = 0;
+        for(j in workExJson[i].Outcome){
             document.write("<li>");
-            document.write(workExJson[i].Outcome[0]);
+            document.write(workExJson[i].Outcome[j]);
             document.write("</li>");
-            document.write("<li>");
-            document.write(workExJson[i].Outcome[1]);
-            document.write("</li>");
-            document.write("<li>");
-            document.write(workExJson[i].Outcome[2]);
-            document.write("</li>");
-
+        }
         document.write("</ul>");
         if(i == len-1){
             document.write("<br>");
