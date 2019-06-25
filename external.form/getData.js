@@ -16,10 +16,12 @@ function URL2JSON(){
     var i = 0;
     var getURL_Split_Ary_Split = {};
     for(i in getURL_Split_Ary){
+        //!!!you can turn it off here!!!
         document.write(getURL_Split_Ary[i]+"<br>");
         var nameTemp = getURL_Split_Ary[i].split("=")[0];
         getURL_Split_Ary_Split[nameTemp] = getURL_Split_Ary[i].split("=")[1];
     }
+    document.write("Only for debug, you can turn it off inside getData.js<br>");
     return getURL_Split_Ary_Split;
 }
 
