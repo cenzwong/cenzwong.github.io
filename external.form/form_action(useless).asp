@@ -11,10 +11,10 @@
 var getURL_raw = window.location.search.slice(1,window.location.search.length-1);
 
 //replace "+" to " "   TODO: I don't know how to keep replace all the things.....
-var getURL_raw = getURL_raw.replace("+"," ");
-var getURL_raw = getURL_raw.replace("+"," ");
-var getURL_raw = getURL_raw.replace("+"," ");
-var getURL_raw = getURL_raw.replace("+"," ");
+getURL_raw = getURL_raw.replace("+"," ");
+getURL_raw = getURL_raw.replace("+"," ");
+getURL_raw = getURL_raw.replace("+"," ");
+getURL_raw = getURL_raw.replace("+"," ");
 
 //decode URI
 var getURL_raw = decodeURIComponent(getURL_raw);
