@@ -24,9 +24,15 @@
 
     <fieldset>
     <legend>Personal information1:</legend>
-    <p>Cantonese: <input type="range" id="Cantonese" name="Cantonese" value="50"></p>
-    <p>Putonhua: <input type="range" id="Putonhua" name="Putonhua" value="50"></p>
-    <p>English: <input type="range" id="English" name="English" value="60"></p>
+    <p>Cantonese: <input type="range" min="1" max="100" value="50" 
+        id="Cantonese" name="Cantonese" value="50" oninput="CantoNum.value=parseInt(Cantonese.value)">
+        <output name="CantoNum" for="Cantonese"></output></p>
+    <p>Putonhua: <input type="range" min="1" max="100" value="50" 
+        id="Putonhua" name="Putonhua" value="50" oninput="MandaNum.value=parseInt(Putonhua.value)">
+        <output name="MandaNum" for="Putonhua"></output></p>
+    <p>English: <input type="range" min="1" max="100" value="50" 
+        id="English" name="English" value="50" oninput="EngNum.value=parseInt(English.value)">
+        <output name="EngNum" for="English"></output></p>
     
     <!-- <p>Employee: <input type="text" name="Employee" value="Student"/></p>
     <p>Home: <input type="text" name="Home" value="Hong Kong, China"/></p>
