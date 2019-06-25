@@ -201,15 +201,17 @@ function displayWorkEx() {
         document.write(workExJson[i].Date);
         document.write("</h6>");
         document.write("<ul style=\"list-style-type:circle; padding: 0px;margin: 15px;\">");
-        document.write("<li>");
-        document.write(workExJson[i].Outcome[0]);
-        document.write("</li>");
-        document.write("<li>");
-        document.write(workExJson[i].Outcome[1]);
-        document.write("</li>");
-        document.write("<li>");
-        document.write(workExJson[i].Outcome[2]);
-        document.write("</li>");
+
+            document.write("<li>");
+            document.write(workExJson[i].Outcome[0]);
+            document.write("</li>");
+            document.write("<li>");
+            document.write(workExJson[i].Outcome[1]);
+            document.write("</li>");
+            document.write("<li>");
+            document.write(workExJson[i].Outcome[2]);
+            document.write("</li>");
+
         document.write("</ul>");
         if(i == len-1){
             document.write("<br>");
