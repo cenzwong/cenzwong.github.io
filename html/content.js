@@ -1,8 +1,7 @@
 var version = urlJSON['version'];
 //var version = "zh";
 
-var eduExJson = 
-[{
+var eduExJson = [{
     "en":{
             "Name":"The Hong Kong Polytechnic University",
             "Link":"http://www.eie.polyu.edu.hk/",
@@ -15,8 +14,7 @@ var eduExJson =
             "Date":"Sep 2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
             "Description":"Bachelor Degree"
         }
-},
-{
+},{
     "en":{
         "Name":"ELCHK Yuen Long Lutheran Secondary School",
         "Link":"http://www.yll.edu.hk/",
@@ -34,19 +32,6 @@ var eduExJson =
                         "
         }
 }];
-
-var scoreLangJson =  {
-    "spoken":[
-        ["Cantonese","100"],
-        ["Mandarian","90"],
-        ["English","85"]
-    ],
-    "computer":[
-        ["C/C++/ Embedded","90"],
-        ["Matlab / Octave","76"],
-        ["Python","60"]            
-    ]
-};
 
 var workExJson = 
     [
@@ -84,8 +69,8 @@ var workExJson =
                 ]
             },
             "zh":{
-                "Pos_Com":"暑期實習 (Embedded Middleware Team) / 深圳創維-RGB電子有限公司",
-                "Link":"http://investor.skyworth.com/en/index.php",
+                "Pos_Com":"暑期實習 (嵌入式中介軟體組) / 深圳創維-RGB電子有限公司",
+                "Link":"http://investor.skyworth.com/tc/index.php",
                 "Date":"3 Jun 2019 - 11 Jul 2019",
                 "Outcome":[
                     "."
@@ -117,7 +102,7 @@ var workExJson =
         {
             "en":{
                 "Pos_Com":"Summer Intern (Millimeter Wave Product Team)/ Nuctech Company Limited",
-                "Link":"http://www.nuctech.com/",
+                "Link":"http://www.nuctech.com/en",
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
                     "Preparation work of Machine Learning;",
@@ -162,13 +147,31 @@ var workExJson =
     ]
 ;
 
-function translate_refresh(){
-    if(version == "en"){
-        document.getElementById("translate").setAttribute("href","?version=zh");
-    }else if(version == "zh"){
-        document.getElementById("translate").setAttribute("href","?version=en");
-    }
-}
+
+var scoreLangJson =  {
+    "spoken":[
+        {
+            "en":["Cantonese","100"],
+            "zh":["粵語","100"]
+        },
+        {
+            "en":["Mandarin","90"],
+            "zh":["普通話","90"]
+        },
+        {
+            "en":["English","85"],
+            "zh":["英語","85"]
+        }  
+    ],
+    "computer":[
+        ["C/C++/ Embedded","90"],
+        ["Matlab / Octave","76"],
+        ["Python","60"]            
+    ]
+};
+
+
+
 
 var scoreSkillJson = [
     ["STM32/Atmel/Arduino","80"],
@@ -247,12 +250,12 @@ function displayScoreSkill(){
 function displayScoreLang() {
     var i = 0;
     for(i in scoreLangJson.spoken){
-        document.write("<p>"+scoreLangJson.spoken[i][0]+"</p>");
+        document.write("<p>"+scoreLangJson.spoken[i][version][0]+"</p>");
         document.write("<div class=\"w3-light-grey w3-round-xlarge\">");
         document.write("<div class=\"w3-round-xlarge w3-teal\" style=\"height:"
-                        +Math.pow(scoreLangJson.spoken[i][1]/100,4)*30
+                        +Math.pow(scoreLangJson.spoken[i][version][1]/100,4)*30
                         +"px;width:"
-                        +scoreLangJson.spoken[i][1]
+                        +scoreLangJson.spoken[i][version][1]
                         +"%\"></div>");
         document.write("</div>");
     }
@@ -294,5 +297,36 @@ function displayWorkEx() {
             document.write("<hr>");
         }
         document.write("</div>");
+    }
+}
+
+function displayTitleAll(){
+    if(version == "en"){
+        document.getElementById("L1").innerHTML 
+        = "<i class=\"fa fa-asterisk fa-fw w3-margin-right w3-text-teal\"></i>Skills";
+        document.getElementById("L2").innerHTML 
+            = "<i class=\"fa fa-globe fa-fw w3-margin-right w3-text-teal\"></i>Languages";
+        document.getElementById("R1").innerHTML 
+            = "<i class=\"fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal\"></i>Work Experience";
+        document.getElementById("R2").innerHTML 
+            = "<i class=\"fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal\"></i>Education";
+    }else if(version == "zh"){
+        document.getElementById("L1").innerHTML 
+        = "<i class=\"fa fa-asterisk fa-fw w3-margin-right w3-text-teal\"></i>技能";
+        document.getElementById("L2").innerHTML 
+            = "<i class=\"fa fa-globe fa-fw w3-margin-right w3-text-teal\"></i>語言能力";
+        document.getElementById("R1").innerHTML 
+            = "<i class=\"fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal\"></i>工作經驗";
+        document.getElementById("R2").innerHTML 
+            = "<i class=\"fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal\"></i>教育";
+    }
+
+}
+
+function translate_refresh(){
+    if(version == "en"){
+        document.getElementById("translate").setAttribute("href","?version=zh");
+    }else if(version == "zh"){
+        document.getElementById("translate").setAttribute("href","?version=en");
     }
 }

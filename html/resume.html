@@ -40,15 +40,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <script> displayPersonalInfo() </script>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>
-            Skills</b></p>
+          <p class="w3-large"><b id="L1"></b></p>
           <script> displayScoreSkill() </script>
           <br>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>
-            Languages</b></p>
+          <p class="w3-large w3-text-theme"><b id="L2"></b></p>
           <script> displayScoreLang() </script>
 
           <p>and experience a lot of more ... </p>
+
           <br>
         </div>
       </div>
@@ -62,24 +61,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom" id="workEx">
-        <h2 class="w3-text-grey w3-padding-16">
-          <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
-          Work Experience
-        </h2>
+        <h2 class="w3-text-grey w3-padding-16" id="R1"></h2>
         <script> displayWorkEx() </script>     
       </div>
 
       <div class="w3-container w3-card w3-white" id="eduEx">
-        <h2 class="w3-text-grey w3-padding-16">
-          <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
-          Education
-        </h2>
+        <h2 class="w3-text-grey w3-padding-16" id="R2"></h2>
         <script> displayEduEx() </script>  
       </div>
 
     <!-- End Right Column -->
     </div>
-    
+    <script>displayTitleAll();</script>
   <!-- End Grid -->
   </div>
   
