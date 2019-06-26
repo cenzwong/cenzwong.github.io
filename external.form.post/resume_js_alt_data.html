@@ -3,10 +3,12 @@
 <title>Cenz's Resume</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../css/w3.css">
-<link rel='stylesheet' href='../../css/RobotoFonts.css'>
+<link rel="stylesheet" href="./css/w3.css">
+<link rel='stylesheet' href='./css/RobotoFonts.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <script src="content.js"></script>
+<script src="getData.js"></script>
 
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
@@ -27,9 +29,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container" id="photo">
-          <img src="../../src/avator.jpg" style="width:100%" alt="Avatar">
+          <img src="https://images.wallpapersden.com/image/download/thanos-smiling_61680_7680x4320.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2><img src="../../src/WongTszHo.png" style="width:100%;height:auto"></h2>
+            <h2 style="color:beige"><script>document.write(urlJSON['Name']);</script></h2>
           </div>
         </div>
 
@@ -98,14 +100,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     -->
   <p><a href="../index.html">HOME</a></p>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
-  <p id="demo"></p>
-
-  <script>
-  var d = new Date();
-  document.getElementById("demo").innerHTML = d;
-  </script>
-
 </footer>
 
 </body>

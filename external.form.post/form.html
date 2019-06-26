@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<form action="form_action.asp" method="post" target="_blank">
+    <fieldset>
+    <legend>Personal information:</legend>
+    <!-- <p>Employee: <input type="text" name="Employee" placeholder="Engineer"/></p>
+    <p>Home: <input type="text" name="Home" placeholder="Hong Kong, China"/></p>
+    <p>Email: <input type="text" name="Email" placeholder="abc@abc.com"/></p>
+    <p>Phone: <input type="text" name="Phone" placeholder="+852 8177 7778"/></p> -->
+    <p>Name: <input type="text" name="Name" value="Peter Chan"/></p>
+    <p>Employee: <input type="text" name="Employee" value="Student"/></p>
+    <p>Home: <input type="text" name="Home" value="Hong Kong, China"/></p>
+    <p>Email: <input type="text" name="Email" value="abc@abc.com"/></p>
+    <p>Phone: <input type="text" name="Phone" value="+852 8177 7778"/></p>
+    <!-- <input type="submit" value="Submit" /> -->
+    </fieldset>
+
+    <fieldset>
+    <legend>Skill:</legend>
+    <p>Skill 1: <input type="text" name="Skill_1" placeholder="Skill"/>
+        <input type="range" min="1" max="100" value="50" 
+        id="Skill_1_num" name="Skill_1_num" value="50" oninput="Skill_1_num_display.value=parseInt(Skill_1_num.value)">
+        <output name="Skill_1_num_display" for="Skill_1_num"></output></p>
+    <p>Skill 2: <input type="text" name="Skill_2" placeholder="Skill"/>
+        <input type="range" min="1" max="100" value="50" 
+        id="Skill_2_num" name="Skill_2_num" value="50" oninput="Skill_2_num_display.value=parseInt(Skill_2_num.value)">
+        <output name="Skill_2_num_display" for="Skill_2_num"></output></p>
+    <p>Skill 3: <input type="text" name="Skill_3" placeholder="Skill"/>
+        <input type="range" min="1" max="100" value="50" 
+        id="Skill_3_num" name="Skill_3_num" value="50" oninput="Skill_3_num_display.value=parseInt(Skill_3_num.value)">
+        <output name="Skill_3_num_display" for="Skill_3_num"></output></p>
+    
+    <!-- <p>Employee: <input type="text" name="Employee" value="Student"/></p>
+    <p>Home: <input type="text" name="Home" value="Hong Kong, China"/></p>
+    <p>Email: <input type="text" name="Email" value="abc@abc.com"/></p>
+    <p>Phone: <input type="text" name="Phone" value="+852 8177 7778"/></p> -->
+    </fieldset>
+
+
+    <fieldset>
+    <legend>Language:</legend>
+    <p>Cantonese: <input type="range" min="1" max="100" value="50" 
+        id="Cantonese" name="Cantonese" value="50" oninput="CantoNum.value=parseInt(Cantonese.value)">
+        <output name="CantoNum" for="Cantonese"></output></p>
+    <p>Putonhua: <input type="range" min="1" max="100" value="50" 
+        id="Putonhua" name="Putonhua" value="50" oninput="MandaNum.value=parseInt(Putonhua.value)">
+        <output name="MandaNum" for="Putonhua"></output></p>
+    <p>English: <input type="range" min="1" max="100" value="50" 
+        id="English" name="English" value="50" oninput="EngNum.value=parseInt(English.value)">
+        <output name="EngNum" for="English"></output></p>
+    
+    <!-- <p>Employee: <input type="text" name="Employee" value="Student"/></p>
+    <p>Home: <input type="text" name="Home" value="Hong Kong, China"/></p>
+    <p>Email: <input type="text" name="Email" value="abc@abc.com"/></p>
+    <p>Phone: <input type="text" name="Phone" value="+852 8177 7778"/></p> -->
+    
+    </fieldset>
+    <input type="submit" value="Submit" />
+</form>
+
+
+
+</body>
+</html>
