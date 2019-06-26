@@ -16,20 +16,20 @@ var eduExJson = [{
         }
 },{
     "en":{
-        "Name":"ELCHK Yuen Long Lutheran Secondary School",
-        "Link":"http://www.yll.edu.hk/",
-        "Date":"3 Jun 2019 - 11 Jul 2019",
-        "Description":"<p>Secondary School</p>\
-                        <p>Subject taken: Physics, Chemistry, Biology, MATHEMATICS Extended Part Module 2 (Algebra and Calculus)</p>\
-                        "
+            "Name":"ELCHK Yuen Long Lutheran Secondary School",
+            "Link":"http://www.yll.edu.hk/",
+            "Date":"3 Jun 2019 - 11 Jul 2019",
+            "Description":"<p>Secondary School</p>\
+                            <p>Subject taken: Physics, Chemistry, Biology, MATHEMATICS Extended Part Module 2 (Algebra and Calculus)</p>\
+                            "
         },
     "zh":{
-                "Name":"基督教香港信義會元朗信義中學",
-                "Link":"http://www.yll.edu.hk/",
-                "Date":"3 Jun 2019 - 11 Jul 2019",
-                "Description":"<p>中學</p>\
-                        <p>就讀科目: 物理、化學、生物學、數學延伸部分單元二（代數與微積分）</p>\
-                        "
+            "Name":"基督教香港信義會元朗信義中學",
+            "Link":"http://www.yll.edu.hk/",
+            "Date":"3 Jun 2019 - 11 Jul 2019",
+            "Description":"<p>中學</p>\
+                    <p>就讀科目: 物理、化學、生物學、數學延伸部分單元二（代數與微積分）</p>\
+                    "
         }
 }];
 
