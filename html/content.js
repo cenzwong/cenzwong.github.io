@@ -184,6 +184,13 @@ var scoreSkillJson = [
 var infoJson = 
     [
         {
+            "icon":"fa-id-card",
+            "word":{
+                "en":"Wong Tsz Ho, Cenz",
+                "zh":"黃子 (Cenz)"
+            }
+        },
+        {
             "icon":"fa-briefcase",
             "word":{
                 "en":"Electronic and Information Engineering Student",
