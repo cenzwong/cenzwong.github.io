@@ -7,7 +7,9 @@
 <link rel='stylesheet' href='../css/RobotoFonts.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/floatingButton.css">
+<script src="getData.js"></script>
 <script src="content.js"></script>
+
 
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
@@ -28,9 +30,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container" id="photo">
-          <img src="../../src/avator.jpg" style="width:100%" alt="Avatar">
+          <img src="../src/avator.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2><img src="../../src/WongTszHo.png" style="width:100%;height:auto"></h2>
+            <h2><img src="../src/WongTszHo.png" style="width:100%;height:auto"></h2>
           </div>
         </div>
 
@@ -111,13 +113,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 
 <!-- floating button -->
-<a href="#" class="float">
-    <i class="fa fa-envelope my-float"></i>
-</a>
-<div class="label-container">
-    <div class="label-text">Feedback</div>
-    <i class="fa fa-play label-arrow"></i>
-</div>
+<a href="../index.html" class="float" id="menu-share">
+  <i class="fa fa-home my-float"></i>
+  </a>
+  
+  <ul class="floating">
+  <li><a href="#">
+  <i class="fa fa-language my-float"></i>
+  </a></li>
+  <li><a href="#">
+  <i class="fa fa-google-plus my-float"></i>
+  </a></li>
+  <li><a href="#" onclick=translate_refresh() id="translate">
+  <i class="fa fa-language my-float"></i>
+  </a></li>
+  </ul>
+
+
+
+
 
 </body>
 </html>

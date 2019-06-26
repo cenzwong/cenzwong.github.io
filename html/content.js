@@ -1,4 +1,4 @@
-var version = "en";
+var version = urlJSON['version'];
 //var version = "zh";
 
 var eduExJson = 
@@ -104,7 +104,7 @@ var workExJson =
                 ]
             },
             "zh":{
-                "Pos_Com":"實習電子工程師" / "RF Tech Ltd. - 智控系統有限公司",
+                "Pos_Com":"實習電子工程師 / RF Tech Ltd. - 智控系統有限公司",
                 "Link": "http://www.hkrft.com/",
                 "Date": "Aug 2018 - May 2019",
                 "Outcome":[
@@ -162,6 +162,14 @@ var workExJson =
     ]
 ;
 
+function translate_refresh(){
+    if(version == "en"){
+        document.getElementById("translate").setAttribute("href","?version=zh");
+    }else if(version == "zh"){
+        document.getElementById("translate").setAttribute("href","?version=en");
+    }
+}
+
 var scoreSkillJson = [
     ["STM32/Atmel/Arduino","80"],
     ["PCB Schematic/Layout","70"],
@@ -201,8 +209,6 @@ function displayPersonalInfo(){
     
 }
 
-
-
 // code
 
 function displayEduEx() {
@@ -210,7 +216,7 @@ function displayEduEx() {
     var len = eduExJson.length;
     for(i in eduExJson){
         document.write("<div class=\"w3-container\">");
-        document.write("<h5 class=\"w3-opacity\"><b>"+eduExJson[i][version].Name+"</b>");
+        document.write("<h5 class=\"w3-opacity\"><b id=\"EduName"+i+"\">"+eduExJson[i][version].Name+"</b>");
         document.write("<a href=\""+eduExJson[i][version].Link+"\" target=\"_blank\">");
         document.write("<i class=\"fa fa-info-circle fa-fw w3-margin-right\"></i>");
         document.write("</a>");
