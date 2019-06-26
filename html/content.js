@@ -185,19 +185,31 @@ var infoJson =
     [
         {
             "icon":"fa-briefcase",
-            "word":"Electronic and Information Engineering Student"
+            "word":{
+                "en":"Electronic and Information Engineering Student",
+                "zh":"電子與資訊工程專業學生"
+            }
         },
         {
             "icon":"fa-home",
-            "word":"Hong Kong, China"
+            "word":{
+                "en":"Hong Kong, China",
+                "zh":"中國香港"
+            }
         },
         {
             "icon":"fa-envelope",
-            "word":"<a href=\"mailto:webmaster@example.com\">cenz@engineer.com</a>"
+            "word":{
+                "en":"<a href=\"mailto:webmaster@example.com\">cenz@engineer.com</a>",
+                "zh":"<a href=\"mailto:webmaster@example.com\">cenz@engineer.com</a>"
+            }
         },
         {
             "icon":"fa-phone",
-            "word":"+852 6158 5094, (+86 150 0204 3095)"
+            "word":{
+                "en":"+852 6158 5094, (+86 150 0204 3095)",
+                "zh":"+852 6158 5094, (+86 150 0204 3095)"
+            }
         }
     ]
 ;
@@ -207,7 +219,7 @@ function displayPersonalInfo(){
     var len = infoJson.length;
     for(i in infoJson){
         document.write("<p><i class=\"fa "+ infoJson[i].icon +" fa-fw w3-margin-right w3-large w3-text-teal\"></i>");
-        document.write(infoJson[i].word+"</p>");
+        document.write(infoJson[i].word[version]+"</p>");
     }
     
 }
