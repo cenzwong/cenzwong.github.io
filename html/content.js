@@ -1,5 +1,10 @@
-var version = urlJSON['version'];
-//var version = "zh";
+var version;
+if(urlJSON['version']==null){
+    version = "en";
+}else{
+    version = urlJSON['version'];
+}
+
 
 var eduExJson = [{
     "en":{
@@ -38,7 +43,10 @@ var workExJson =
         {
             "en":{
                 "Pos_Com":"Summer Intern / Wuxi Murata Electronics Co., Ltd.",
-                "Link":"https://www.murata.com/",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link":"https://www.murata.com/"
+                }],
                 "Date":"20 Jul 2019 - 30 Aug 2019",
                 "Outcome":[
                     "You can add as many as you like",
@@ -49,7 +57,10 @@ var workExJson =
             },
             "zh":{
                 "Pos_Com":"暑期實習 / 日本村田電子有限公司(無錫)",
-                "Link":"https://www.murata.com/",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link":"https://www.murata.com/"
+                }],
                 "Date":"20 Jul 2019 - 30 Aug 2019",
                 "Outcome":[
                     "You can add as many as you like",
@@ -62,7 +73,10 @@ var workExJson =
         {
             "en":{
                 "Pos_Com":"Summer Intern (Embedded Middleware Team) / Shenzhen Skyworth-RGB Electronic Co Ltd",
-                "Link":"http://investor.skyworth.com/en/index.php",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link":"http://investor.skyworth.com/en/index.php"
+                }],
                 "Date":"3 Jun 2019 - 11 Jul 2019",
                 "Outcome":[
                     "."
@@ -70,7 +84,10 @@ var workExJson =
             },
             "zh":{
                 "Pos_Com":"暑期實習 (嵌入式中介軟體組) / 深圳創維-RGB電子有限公司",
-                "Link":"http://investor.skyworth.com/tc/index.php",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link":"http://investor.skyworth.com/tc/index.php"
+                }],
                 "Date":"3 Jun 2019 - 11 Jul 2019",
                 "Outcome":[
                     "."
@@ -80,7 +97,10 @@ var workExJson =
         {
             "en":{
                 "Pos_Com":"Electronic Engineer Trainee / RF Tech Ltd. - ITE Smartcard Solutions Limited",
-                "Link": "http://www.hkite.com/",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link": "http://www.hkite.com/"
+                }],
                 "Date": "Aug 2018 - May 2019",
                 "Outcome":[
                     "Research and product development of LoRa, NB-IoT;",
@@ -90,7 +110,10 @@ var workExJson =
             },
             "zh":{
                 "Pos_Com":"實習電子工程師 / RF Tech Ltd. - 智控系統有限公司",
-                "Link": "http://www.hkrft.com/",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link": "http://www.hkrft.com/"
+                }],
                 "Date": "Aug 2018 - May 2019",
                 "Outcome":[
                     "Research and product development of LoRa, NB-IoT;",
@@ -102,7 +125,10 @@ var workExJson =
         {
             "en":{
                 "Pos_Com":"Summer Intern (Millimeter Wave Product Team)/ Nuctech Company Limited",
-                "Link":"http://www.nuctech.com/en",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link": "http://www.nuctech.com/en"
+                }],
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
                     "Preparation work of Machine Learning;",
@@ -112,7 +138,10 @@ var workExJson =
             },
             "zh":{
                 "Pos_Com":"暑期實習 (電磁感知事業部 毫米波產品部) / 同方威視技術股份有限公司",
-                "Link":"http://www.nuctech.com/",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link": "http://www.nuctech.com/"
+                }],
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
                     "Preparation work of Machine Learning;",
@@ -124,7 +153,10 @@ var workExJson =
         {
             "en":{
                 "Pos_Com":"Part-time tutor / Robot Insitute of Hong Kong",
-                "Link":"https://www.rihk.com/",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link": "https://www.rihk.com/"
+                }],
                 "Date":"2017 - 2018",
                 "Outcome":[
                     "Teaching Kids with LEGO Mindstorms with NXT, EV3;",
@@ -134,7 +166,10 @@ var workExJson =
             },
             "zh":{
                 "Pos_Com":"兼職導師 / 香港機械人學院",
-                "Link":"https://www.rihk.com/",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link": "https://www.rihk.com/"
+                }],
                 "Date":"2017 - 2018",
                 "Outcome":[
                     " LEGO Mindstorms with NXT, EV3;",
@@ -183,7 +218,7 @@ var infoJson =
             "icon":"fa-id-card",
             "word":{
                 "en":"Wong Tsz Ho, Cenz",
-                "zh":"黃子 (Cenz)"
+                "zh":"黃子豪 (Cenz)"
             }
         },
         {
@@ -297,9 +332,14 @@ function displayWorkEx() {
     for(let i in workExJson){
         document.write("<div class=\"w3-container\">");
         document.write("<h5 class=\"w3-opacity\"><b>"+workExJson[i][version].Pos_Com+"</b>");
-        document.write("<a href=\""+workExJson[i][version].Link+"\" target=\"_blank\">");
-        document.write("<i class=\"fa fa-info-circle fa-fw w3-margin-right\"></i>");
-        document.write("</a>");
+
+        for(let j in workExJson[i][version].info){
+            document.write("<a href=\""+workExJson[i][version].info[j].Link+"\" target=\"_blank\">");
+            document.write("<i class=\"fa "+workExJson[i][version].info[j].icon+" fa-fw w3-margin-centre\"></i>");
+            document.write("</a>");
+        }
+
+
         document.write("</h5>");
         document.write("<h6 class=\"w3-text-teal\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>");
         document.write(workExJson[i][version].Date);
