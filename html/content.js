@@ -76,6 +76,9 @@ var workExJson =
                 "info":[{
                     "icon":"fa-globe",
                     "Link":"http://investor.skyworth.com/en/index.php"
+                },{
+                    "icon":"fa-picture-o",
+                    "Link":"javascript:window.open('../ig/ig.html?photo=Skyworth', '', 'width=540,height=622');"
                 }],
                 "Date":"3 Jun 2019 - 11 Jul 2019",
                 "Outcome":[
