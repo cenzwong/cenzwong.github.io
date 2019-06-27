@@ -147,7 +147,6 @@ var workExJson =
     ]
 ;
 
-
 var scoreLangJson =  {
     "spoken":[
         {
@@ -166,12 +165,9 @@ var scoreLangJson =  {
     "computer":[
         ["C/C++/ Embedded","90"],
         ["Matlab / Octave","76"],
-        ["Python","60"]            
+        ["Python / MicroPython","60"]            
     ]
 };
-
-
-
 
 var scoreSkillJson = [
     ["STM32/Atmel/Arduino","80"],
@@ -221,6 +217,9 @@ var infoJson =
     ]
 ;
 
+
+
+// code
 function displayPersonalInfo(){
     var i = 0;
     var len = infoJson.length;
@@ -230,8 +229,6 @@ function displayPersonalInfo(){
     }
     
 }
-
-// code
 
 function displayEduEx() {
     var i = 0;
@@ -271,11 +268,15 @@ function displayScoreLang() {
     for(i in scoreLangJson.spoken){
         document.write("<p>"+scoreLangJson.spoken[i][version][0]+"</p>");
         document.write("<div class=\"w3-light-grey w3-round-xlarge\">");
-        document.write("<div class=\"w3-round-xlarge w3-teal\" style=\"height:"
-                        +Math.pow(scoreLangJson.spoken[i][version][1]/100,4)*30
-                        +"px;width:"
-                        +scoreLangJson.spoken[i][version][1]
-                        +"%\"></div>");
+        // document.write("<div class=\"w3-round-xlarge w3-teal\" style=\"height:"
+        //                 +Math.pow(scoreLangJson.spoken[i][version][1]/100,4)*30
+        //                 +"px;width:"
+        //                 +scoreLangJson.spoken[i][version][1]
+        //                 +"%\"></div>");
+        //<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+        document.write("<div class=\"w3-round-xlarge w3-teal\" style=\"height:15px;width:"
+                            +scoreLangJson.spoken[i][version][1]
+                            +"%\"></div>")
         document.write("</div>");
     }
     document.write("<hr>");
@@ -284,7 +285,7 @@ function displayScoreLang() {
         document.write("<p>"+scoreLangJson.computer[i][0]+"</p>");
         document.write("<div class=\"w3-light-grey w3-round-xlarge\">");
         document.write("<div class=\"w3-round-xlarge w3-teal\" style=\"height:"
-                        +Math.pow(scoreLangJson.computer[i][1]/100,4)*30
+                        +"15"
                         +"px;width:"
                         +scoreLangJson.computer[i][1]
                         +"%\"></div>");
