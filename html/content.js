@@ -5,20 +5,20 @@ var eduExJson = [{
     "en":{
             "Name":"The Hong Kong Polytechnic University",
             "Link":"http://www.eie.polyu.edu.hk/",
-            "Date":"Sep 2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
+            "Date":"2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
             "Description":"Bachelor Degree"
         },
     "zh":{
             "Name":"香港理工大學",
             "Link":"http://www.eie.polyu.edu.hk/",
-            "Date":"Sep 2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
+            "Date":"2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
             "Description":"本科"
         }
 },{
     "en":{
             "Name":"ELCHK Yuen Long Lutheran Secondary School",
             "Link":"http://www.yll.edu.hk/",
-            "Date":"3 Jun 2019 - 11 Jul 2019",
+            "Date":"2009 - 2015",
             "Description":"<p>Secondary School</p>\
                             <p>Subject taken: Physics, Chemistry, Biology, MATHEMATICS Extended Part Module 2 (Algebra and Calculus)</p>\
                             "
@@ -26,7 +26,7 @@ var eduExJson = [{
     "zh":{
             "Name":"基督教香港信義會元朗信義中學",
             "Link":"http://www.yll.edu.hk/",
-            "Date":"3 Jun 2019 - 11 Jul 2019",
+            "Date":"2009 - 2015",
             "Description":"<p>中學</p>\
                     <p>就讀科目: 物理、化學、生物學、數學延伸部分單元二（代數與微積分）</p>\
                     "
