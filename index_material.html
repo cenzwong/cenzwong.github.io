@@ -20,45 +20,74 @@
   </head>
 
   <body>
-
       <nav>
           <div class="nav-wrapper purple lighten-2">
-            <a href="#" class="brand-logo center"><img src=src/LoGo.png style="height:64px;width:auto"></a>
+            <a href="./index.html" class="brand-logo center"><img src=src/LoGo.png style="height:64px;width:auto"></a>
           </div>
         </nav>
+      <div class="container">
+ 
+                  
+              <div class="row">
               
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="src/avator.jpg">
-                  <span class="card-title blue-text text-darken-2"><b>My Resume</b></span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light red" href=external.form/form.html target="_blank">
-                    <i class="material-icons">add</i></a>
+                <div class="col s12 m12 l6 xl6">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="src/avator.jpg">
+                      <span class="card-title blue-text text-darken-2"><b>My Resume</b></span>
+                      <a class="btn-floating halfway-fab waves-effect waves-light red pulse" href=external.form/form.html target="_blank">
+                        <i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                      <p>Hi, My name is Cenz, and the following is my resume, feel free to have a look on it</p>
+                    </div>
+                    <div class="card-action" >
+                        <a href="html/resume.html?version=en" target="_blank">English version</a>
+                        <a href="html/resume.html?version=zh" target="_blank">Chinese Version</a>
+                      </div>
+                  </div>
                 </div>
-                <div class="card-content">
-                  <p>Hi, My name is Cenz, and the following is my resume, feel free to have a look on it</p>
-                </div>
-                <div class="card-action">
-                    <a href="html/resume.html?version=en" target="_blank">English version</a>
-                    <a href="html/resume.html?version=zh" target="_blank">Chinese Version</a>
+                <div class="col s12 m12 l6 xl6">
+                    <div class="card-panel teal">
+                      <span class="white-text">             
+                        <h4>Know more about me</h4>
+                        <div class="collection with-header">
+                          <a href="https://cmakerhk.wordpress.com" class="collection-item">Learning Blog (Wordpress)</a>
+                          <a href="https://github.com/cenzwong" class="collection-item">Github</a>
+                          <a href="#!" class="collection-item">LinkedIn</a>
+                          <a href="#!" class="collection-item">Instagram</a>
+                        </div>
+                      </span>
+                    </div>
                   </div>
               </div>
-            </div>
-          </div>
+               
 
-  <h4>Know more about me</h4>
-  <ul class="collection">
-      <li class="collection-item"><a href=https://cmakerhk.wordpress.com>Lear</a><a href=https://cmakerhk.wordpress.com/login>n</a><a href=https://cmakerhk.wordpress.com/>ing blog (Wordpress)</a></li>
-      <li class="collection-item"><a href=https://github.com/cenzwong>Github</a></li>
-      <li class="collection-item">LinkedIn</li>
-      <li class="collection-item">Instagram</li>
-  </ul>
+      </div>
 
 
+      <!-- buttttttton -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
 
-
-
+    <script>       
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+          direction: 'up',
+          hoverEnabled: false
+        });
+      });
+    </script>
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
