@@ -38,7 +38,7 @@
         <li><a class="subheader">Subheader</a></li>
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
       </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="javascript:instance.open();" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
       <script>     
         document.addEventListener('DOMContentLoaded', function() {
@@ -55,15 +55,18 @@
         $(document).ready(function(){
           $('.sidenav').sidenav();
         });
+
+        var instance = M.Sidenav.getInstance(elem);
+        instance.open();
       </script>
 
 <!--  -->
 
-      <nav>
+      <!-- <nav>
           <div class="nav-wrapper purple lighten-2">
             <a href="./index.html" class="brand-logo center"><img src=src/LoGo.png style="height:64px;width:auto"></a>
           </div>
-        </nav>
+        </nav> -->
       <div class="container">
  
                   
