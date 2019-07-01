@@ -7,16 +7,17 @@ var timeline = [
                     dkaj fhsdllk djfhlk sdh kjadhslk jspsum.."
     },{
         "Posistion":"timeline_right",
-        "Time":"2017",
-        "Content":"Lorem iakaf hjglkj hadfgkjhd fakgjhflkjhsf alfkjhds lkfjhal dksfhjld kjwhf lkaj dhflks jlkadjfh ladkjhf\
-                    dkaj fhsdllkdj fhlksdh lkjadhs lkj spsu m.."
+        "Time":"2015",
+        "Content":"Graduate in Secondary school. <br/>\
+                    Ready for PolyU Study. <br/>\
+                    <img src=\"http://www.polyu.edu.hk/aado/aa/filemanager/en/ebulletin/2012Jul/polyu3.jpg\" style=\"width:80%\">"
     }
 ]
 
 for(let i in timeline){
     document.write("<div class=\"timeline_container "+timeline[i].Posistion+" \">");
     document.write("<div class=\"timeline_content\">");
-    document.write("<h2>"+timeline[i].Time+"</h2>");
+    document.write("<h4>"+timeline[i].Time+"</h4>");
     document.write("<p>"+timeline[i].Content+"</p>");
     document.write("</div></div>");
 }
