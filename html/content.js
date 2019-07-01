@@ -147,7 +147,7 @@ var workExJson =
                 }],
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
-                    "Preparation work of Machine Learning;",
+                    "機器學習前期準備工作;",
                     "Data collation and Analysis;",
                     "Tools building for desktop automation;"
                 ]
