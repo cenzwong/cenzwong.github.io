@@ -82,18 +82,22 @@ var workExJson =
                 }],
                 "Date":"3 Jun 2019 - 11 Jul 2019",
                 "Outcome":[
-                    "."
+                    "Learn about management of huge project;",
+                    "Study different screen mirroring technology;",
+                    "Learning the proper program document writing and team management;"
                 ]
             },
             "zh":{
-                "Pos_Com":"暑期實習 (嵌入式中介軟體組) / 深圳創維-RGB電子有限公司",
+                "Pos_Com":"暑期實習 (嵌入式中間件軟體組) / 深圳創維-RGB電子有限公司",
                 "info":[{
                     "icon":"fa-globe",
                     "Link":"http://investor.skyworth.com/tc/index.php"
                 }],
                 "Date":"3 Jun 2019 - 11 Jul 2019",
                 "Outcome":[
-                    "."
+                    "了解有關大型項目的管理;",
+                    "研究不同的屏幕鏡像技術;",
+                    "學習適當的程序文檔編寫和團隊管理;"
                 ]
             }
         },
