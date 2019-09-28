@@ -157,7 +157,7 @@ var workExJson =
         },
         {
             "en":{
-                "Pos_Com":"Part-time tutor / Robot Insitute of Hong Kong",
+                "Pos_Com":"Part-time tutor / Robot Institute of Hong Kong",
                 "info":[{
                     "icon":"fa-globe",
                     "Link": "https://www.rihk.com/"
