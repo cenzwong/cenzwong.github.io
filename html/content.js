@@ -205,7 +205,7 @@ var scoreLangJson =  {
     "computer":[
         ["C/C++/ Embedded","90"],
         ["Matlab / Octave","76"],
-        ["Python / MicroPython","60"]            
+        ["Python / MicroPython","70"]            
     ]
 };
 
@@ -236,7 +236,7 @@ var infoJson =
         {
             "icon":"fa-home",
             "word":{
-                "en":"Hong Kong, China",
+                "en":"HKSAR of PRC",
                 "zh":"中國香港"
             }
         },
