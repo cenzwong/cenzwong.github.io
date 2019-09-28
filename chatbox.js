@@ -66,4 +66,7 @@ function onClick_btnSned(){
   let message = document.getElementById('txt').value;
   sendTgMessage(name+" said: "+message);
   alert("Dear "+ name   + ",\r\nmessage has been sent");
+
+  document.getElementById('nme').value = null;
+  document.getElementById('txt').value = null;
 }

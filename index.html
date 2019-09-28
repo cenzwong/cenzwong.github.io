@@ -18,6 +18,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- <link rel="stylesheet" href="./timeline.css"> -->
+    <script src="./chatbox.js"></script>
   </head>
 
   <body>
@@ -232,9 +233,22 @@
                     </div>
                 </div>
 
-                <div col s12 m12 l12 xl12>
+                <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s4">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="nme" type="text" class="validate">
+                        <label for="nme">Your Name</label>
+                      </div>
+                      <div class="input-field col s8">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="txt" type="tel" class="validate">
+                        <label for="txt">Leave Your Comment and Contact method</label>
+                      </div>
+                      <a class="waves-effect waves-light btn-small" onclick="onClick_btnSned()"><i class="material-icons left">send</i></a>
+                    </div>
+                  </form>
 
-                </div>
 
                   <script>
                     M.AutoInit();
