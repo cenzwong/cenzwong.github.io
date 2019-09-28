@@ -210,10 +210,11 @@ var scoreLangJson =  {
 };
 
 var scoreSkillJson = [
-    ["STM32/Atmel/Arduino","80"],
-    ["PCB Schematic/Layout","70"],
-    ["Illustrator","75"],
-    ["Media","50"] 
+    ["MCU programming (STM32/Atmel SAML/Arduino/ESP32)","80"],
+    ["Embedded Linux (Raspberry Pi)","80"],
+    ["Electronic Practice/PCB Schematic/Layout","70"],
+    ["Machine Learning/AI","75"],
+    ["App development","45"] 
 ]
 ;
 
