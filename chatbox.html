@@ -3,8 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="./css/chatbox.css">
-  <script src="./js/chatbox.js"></script>
+  <link rel="stylesheet" type="text/css" href="./chatbox.css">
+  <script src="./chatbox.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
@@ -16,12 +16,11 @@
     <!-- /action_page.php -->
   <form action="?" class="form-container">
     <h1>Chat</h1>
-
+    <textarea rows="1" placeholder="You Name" name="name" required id="nme"></textarea>
     <label for="msg"><b>Message</b></label>
-    <!-- <textarea placeholder="You Name" name="msg" required></textarea> -->
-    <textarea placeholder="Will deliver to Cenz directly, Please say your name and contact method" name="msg" required id="txt"></textarea>
+    <textarea rows="5" placeholder="Will deliver to Cenz directly, Please say your name and contact method" name="msg" required id="txt"></textarea>
 
-    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn submit" onclick="onClick_btnSned()">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
