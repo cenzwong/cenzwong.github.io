@@ -49,10 +49,9 @@ var workExJson =
                 }],
                 "Date":"20 Jul 2019 - 30 Aug 2019",
                 "Outcome":[
-                    "You can add as many as you like",
-                    "2st sentences",
-                    "3st sentences",
-                    "4st sentences"
+                    "Develop RPA (Robot Process Automation) program;",
+                    "Understand the industrial process of manufacturing;",
+                    "Learn about the management culture of the company;"
                 ]
             },
             "zh":{
@@ -63,10 +62,9 @@ var workExJson =
                 }],
                 "Date":"20 Jul 2019 - 30 Aug 2019",
                 "Outcome":[
-                    "You can add as many as you like",
-                    "2st sentences",
-                    "3st sentences",
-                    "4st sentences"
+                    "開發RPA（機器人過程自動化）程序;",
+                    "了解製造業的工業過程;",
+                    "了解公司的管理文化;"
                 ]
             }
         },
