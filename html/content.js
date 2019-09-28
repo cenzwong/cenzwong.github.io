@@ -175,9 +175,9 @@ var workExJson =
                 }],
                 "Date":"2017 - 2018",
                 "Outcome":[
-                    " LEGO Mindstorms with NXT, EV3;",
-                    "Teaching Arduino and Basic Electronics for Mini-Robocon 2018;",
-                    "Project Implementer;"
+                    "教授 LEGO Mindstorms with NXT, EV3;",
+                    "為Mini-Robocon 2018教授Arduino和基礎電子學;",
+                    "項目實施者；"
                 ]
             }
         }
