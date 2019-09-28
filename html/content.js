@@ -119,9 +119,9 @@ var workExJson =
                 }],
                 "Date": "Aug 2018 - May 2019",
                 "Outcome":[
-                    "Research and product development of LoRa, NB-IoT;",
-                    "PCB manufacture including Schematics, Layout and Soldering;",
-                    "Machine assembly and Coordination;"
+                    "LoRa，NB-IoT的研究和產品開發;",
+                    "PCB設計，包括原理圖，佈局和焊接;",
+                    "機器組裝與協調;"
                 ]
             }
         },
@@ -148,8 +148,8 @@ var workExJson =
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
                     "機器學習前期準備工作;",
-                    "Data collation and Analysis;",
-                    "Tools building for desktop automation;"
+                    "數據整理與分析;",
+                    "用於桌面自動化的工具構建;"
                 ]
             }
         },
