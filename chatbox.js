@@ -70,7 +70,7 @@ function onClick_btnSned(){
   document.getElementById('nme').value = null;
   document.getElementById('txt').value = null;
   
-  url = "/telegram/tg.html?name" + name;
+  url = "/telegram/tg.html?name=" + name;
   window.open(url);
   
 }
