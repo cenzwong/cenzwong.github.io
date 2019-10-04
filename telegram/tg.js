@@ -37,7 +37,7 @@ const sendHttpRequest = (method, url, data) => {
   }
 
 var myVar = setInterval(myTimer, 1000);
-var d = new Date();
+
 
 function myTimer() {
  
@@ -47,6 +47,7 @@ function myTimer() {
   
   
 function sendMsg(){
+  var d = new Date();
     sendTgMessage(input.value());
     messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"<=" +input.value());
 }
@@ -65,8 +66,9 @@ function sendMsg(){
   }
   
   let lastUpdatesID = 0;
-  function getTgMessage(){
 
+  function getTgMessage(){
+     var d = new Date();
     let TGURL = tgURLToken + "getUpdates?offset=" + lastUpdatesID;
     console.log(TGURL);
     sendHttpRequest('GET', TGURL)
