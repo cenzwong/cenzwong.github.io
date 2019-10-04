@@ -27,7 +27,7 @@ const sendHttpRequest = (method, url, data) => {
     button.mousePressed(sendMsg);
   
     messageRecord = createElement('p', ' ');
-    
+    messageRecord.html(messageRecord.html() +"=====waiting for reponse==============<br/>");
   }
   
   function draw() {
