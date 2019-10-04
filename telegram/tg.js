@@ -48,7 +48,7 @@ function myTimer() {
   
 function sendMsg(){
   var d = new Date();
-    sendTgMessage(input.value());
+    sendTgMessage(urlJSON['name']+input.value());
     messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"<=" +input.value());
 }
 
