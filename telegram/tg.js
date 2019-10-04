@@ -27,31 +27,29 @@ const sendHttpRequest = (method, url, data) => {
     button.mousePressed(sendMsg);
   
     messageRecord = createElement('p', ' ');
+    
   }
   
   function draw() {
     //checkMsg();
-
+    
+ 
   }
+
+var myVar = setInterval(myTimer, 1000);
+var d = new Date();
+
+function myTimer() {
+ 
+  //document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+  setTimeout(function(){ getTgMessage(); }, 1500);
+}
   
   
 function sendMsg(){
     sendTgMessage(input.value());
-    messageRecord.html(messageRecord.html() +"<br/>"+ "<=" +input.value());
+    messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"<=" +input.value());
 }
-
-
-
-async function checkMsg(){
-    let replyMsg = await getTgMessage();
-    console.log("Message get", replyMsg);
-    //messageRecord.html(messageRecord.html() +"<br/>"+ "=>" + getTgMessage());
-}
-
-
-  
-  
-
 
   let tgURLToken = "https://api.telegram.org/bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc/";
 
@@ -66,15 +64,22 @@ async function checkMsg(){
       });
   }
   
+  let lastUpdatesID = 0;
   function getTgMessage(){
-    let TGURL = tgURLToken + "getUpdates";
+
+    let TGURL = tgURLToken + "getUpdates?offset=" + lastUpdatesID;
+    console.log(TGURL);
     sendHttpRequest('GET', TGURL)
       .then(responseData => {
         console.log(responseData);
         let lastMsgIndex = responseData.result.length;
+        lastUpdatesID = responseData.result[lastMsgIndex-1].update_id
         let lastMsg = responseData.result[lastMsgIndex-1].message.text;
+        if(lastMsgIndex == 2){
+          messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"=>" +lastMsg);
+        }
         console.log(lastMsg);
-        return lastMsg;
+
       })
       .catch(err => {
         console.log(err, err.data);
