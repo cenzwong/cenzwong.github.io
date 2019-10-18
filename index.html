@@ -227,7 +227,7 @@
 
                 <!-- Cert showing -->
                 <div class="col s12 m12 l12 xl12">
-                    <div class="carousel">
+                    <div class="carousel carousel-slider">
                         <a class="carousel-item" href="#one!"><img src="Cert/Cert_Camp1.jpg"></a>
                         <a class="carousel-item" href="#two!"><img src="Cert/Cert_HardUST.jpg"></a>
                         <a class="carousel-item" href="#three!"><img src="Cert/Cert_MirConComp.jpg"></a>
@@ -235,12 +235,43 @@
                         <a class="carousel-item" href="#five!"><img src="Cert/Cert_SerLearn.jpg"></a>
                         <a class="carousel-item" href="#six!"><img src="Cert/Cert_STARS.jpg"></a>
                         <a class="carousel-item" href="#seven!"><img src="Cert/Cert_STARTS_GOLD.jpg"></a>
+
+                          <!-- <div class="carousel-fixed-item center">
+                            <a class="btn waves-effect white grey-text darken-text-2" onclick="moveNext();">button</a>
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                <li class="active"><a href="#one!">1</a></li>
+                                <li class="waves-effect"><a href="#two!">2</a></li>
+                                <li class="waves-effect"><a href="#three!">3</a></li>
+                                <li class="waves-effect"><a href="#four!">4</a></li>
+                                <li class="waves-effect"><a href="#five!">5</a></li>
+                                <li class="waves-effect"><a href="#" onclick="instance.next();"><i class="material-icons">chevron_right</i></a></li>
+                              </ul>
+                          </div> -->
+
                       </div>
                       <script>        
+    
                         document.addEventListener('DOMContentLoaded', function() {
                           var elems = document.querySelectorAll('.carousel');
-                          var instances = M.Carousel.init(elems, options);
-                        });                   
+                          var instances = M.Carousel.init(elems, {
+                            "indicators": true,
+                            "duration": 100,
+                            "shift": 10,
+                            "fullWidth": true
+                          });
+                          setTimeout(moveNext, 5000);     
+                        }); 
+                        var instance = M.Carousel.getInstance(elem);
+                        
+
+                        function moveNext(){
+                          var elem = document.querySelector('.carousel');
+                          var instance = M.Carousel.getInstance(elem);
+                          instance.next();
+                          setTimeout(moveNext, 5000);
+                        }     
+                            
                       </script>
                 </div>
 
