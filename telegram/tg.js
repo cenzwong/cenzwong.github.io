@@ -29,7 +29,7 @@ const sendHttpRequest = (method, url, data) => {
     button.mousePressed(sendMsg);
   
     messageRecord = createElement('p', ' ');
-    
+    messageRecord.html(messageRecord.html() +"=====waiting for reponse==============<br/>");
   }
   
   function draw() {
@@ -50,7 +50,7 @@ function myTimer() {
   
 function sendMsg(){
   var d = new Date();
-    sendTgMessage(input.value());
+    sendTgMessage(urlJSON['name']+input.value());
     messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"<=" +input.value());
 }
 
