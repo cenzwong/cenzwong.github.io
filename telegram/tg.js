@@ -19,6 +19,8 @@ const sendHttpRequest = (method, url, data) => {
 
   function setup() {
     //createCanvas(400, 400);
+
+    
     input = createInput();
     input.position(20, 65);
   
@@ -58,10 +60,11 @@ function sendMsg(){
     let TGURL = tgURLToken + "sendMessage?chat_id=843999226&text=";
     sendHttpRequest('GET', TGURL+msg)
       .then(responseData => {
-        console.log(responseData);
+        //console.log(responseData);
+        input.value() = 0;
       })
       .catch(err => {
-        console.log(err, err.data);
+        //console.log(err, err.data);
       });
   }
   
@@ -70,17 +73,17 @@ function sendMsg(){
   function getTgMessage(){
      var d = new Date();
     let TGURL = tgURLToken + "getUpdates?offset=" + lastUpdatesID;
-    console.log(TGURL);
+    //console.log(TGURL);
     sendHttpRequest('GET', TGURL)
       .then(responseData => {
-        console.log(responseData);
+        //console.log(responseData);
         let lastMsgIndex = responseData.result.length;
         lastUpdatesID = responseData.result[lastMsgIndex-1].update_id
         let lastMsg = responseData.result[lastMsgIndex-1].message.text;
-        if(lastMsgIndex == 2){
+        if(lastMsgIndex >= 2){
           messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"=>" +lastMsg);
         }
-        console.log(lastMsg);
+        //console.log(lastMsg);
 
       })
       .catch(err => {
