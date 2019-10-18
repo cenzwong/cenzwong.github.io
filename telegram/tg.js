@@ -50,7 +50,7 @@ function myTimer() {
   
 function sendMsg(){
   var d = new Date();
-    sendTgMessage(urlJSON['name']+input.value());
+    sendTgMessage(urlJSON['name']+" replied: "+input.value());
     messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"<=" +input.value());
 }
 
@@ -61,7 +61,7 @@ function sendMsg(){
     sendHttpRequest('GET', TGURL+msg)
       .then(responseData => {
         //console.log(responseData);
-        input.value() = 0;
+        input.value('');
       })
       .catch(err => {
         //console.log(err, err.data);
