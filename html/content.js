@@ -111,7 +111,7 @@ var workExJson =
                 "Outcome":[
                     "Researched and developed product of LoRa, NB-IoT;",
                     "Manufactured PCB including Schematics, Layout and Soldering;",
-                    "Assembly Machine and Coordination;"
+                    "Assembled Machine and Coordination;"
                 ]
             },
             "zh":{
