@@ -42,7 +42,7 @@ var workExJson =
     [
         {
             "en":{
-                "Pos_Com":"Summer Intern / Wuxi Murata Electronics Co., Ltd.",
+                "Pos_Com":"Summer Intern (Business Engineer Department) / Wuxi Murata Electronics Co., Ltd.",
                 "info":[{
                     "icon":"fa-globe",
                     "Link":"https://www.murata.com/"
