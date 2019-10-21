@@ -11,7 +11,8 @@ var eduExJson = [{
             "Name":"The Hong Kong Polytechnic University",
             "Link":"http://www.eie.polyu.edu.hk/",
             "Date":"2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
-            "Description":"Bachelor Degree - Studying Electronics, Circuit, Communication, Embedded Controller, PCB design, Machine Learning etc"
+            "Description":"Bachelor Degree - Studying Electronics, Circuit, Communication, \
+             Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]"
         },
     "zh":{
             "Name":"香港理工大學",
@@ -42,16 +43,16 @@ var workExJson =
     [
         {
             "en":{
-                "Pos_Com":"Summer Intern / Wuxi Murata Electronics Co., Ltd.",
+                "Pos_Com":"Summer Intern (Business Engineer Department) / Wuxi Murata Electronics Co., Ltd.",
                 "info":[{
                     "icon":"fa-globe",
                     "Link":"https://www.murata.com/"
                 }],
                 "Date":"20 Jul 2019 - 30 Aug 2019",
                 "Outcome":[
-                    "Develop RPA (Robot Process Automation) program;",
-                    "Understand the industrial process of manufacturing;",
-                    "Learn about the management culture of the company;"
+                    "Developed RPA (Robot Process Automation) program;",
+                    "Understood the industrial process of manufacturing;",
+                    "Acquired knowledge about the management culture of the company;"
                 ]
             },
             "zh":{
@@ -80,9 +81,9 @@ var workExJson =
                 }],
                 "Date":"3 Jun 2019 - 11 Jul 2019",
                 "Outcome":[
-                    "Learn about management of huge project;",
-                    "Study different screen mirroring technology;",
-                    "Learning the proper program document writing and team management;"
+                    "Acquired knowledge about management of huge project;",
+                    "Studied different screen mirroring technology;",
+                    "Acquired the proper program document writing and team management;"
                 ]
             },
             "zh":{
@@ -108,9 +109,9 @@ var workExJson =
                 }],
                 "Date": "Aug 2018 - May 2019",
                 "Outcome":[
-                    "Research and product development of LoRa, NB-IoT;",
-                    "PCB manufacture including Schematics, Layout and Soldering;",
-                    "Machine assembly and Coordination;"
+                    "Researched and developed product of LoRa, NB-IoT;",
+                    "Manufactured PCB including Schematics, Layout and Soldering;",
+                    "Assembled Machine and Coordination;"
                 ]
             },
             "zh":{
@@ -136,9 +137,9 @@ var workExJson =
                 }],
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
-                    "Preparation work of Machine Learning;",
-                    "Data collation and Analysis;",
-                    "Tools building for desktop automation;"
+                    "Acquired Experiences in Preparation work of Machine Learning;",
+                    "Acquired Experiences in Data collation and Analysis;",
+                    "Built Tools for desktop automation;"
                 ]
             },
             "zh":{
@@ -164,9 +165,9 @@ var workExJson =
                 }],
                 "Date":"2017 - 2018",
                 "Outcome":[
-                    "Teaching Kids with LEGO Mindstorms with NXT, EV3;",
-                    "Teaching Arduino and Basic Electronics for Mini-Robocon 2018;",
-                    "Project Implementer;"
+                    "Taught Kids with LEGO Mindstorms with NXT, EV3;",
+                    "Taught Arduino and Basic Electronics for Mini-Robocon 2018;",
+                    "Implement Project;"
                 ]
             },
             "zh":{
