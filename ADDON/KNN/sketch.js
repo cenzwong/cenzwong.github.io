@@ -29,6 +29,16 @@ function setup() {
   y = height / 2;
 }
 
+
+var warningMsg = "📍📍📍📍📍📍📍📍📍📍\
+                  📍📍📍No one here alarm 📍📍📍\
+                  📍📍📍No one here alarm 📍📍📍\
+                  📍📍📍No one here alarm 📍📍📍\
+                  📍📍📍📍📍📍📍📍📍📍📍📍📍";
+
+
+
+var lastLabel;
 function goClassify() {
   const logits = features.infer(video);
   knn.classify(logits, function(error, result) {
@@ -37,6 +47,44 @@ function goClassify() {
     } else {
       label = result.label;
       labelP.html(result.label);
+      
+      /////
+      // Create WebSocket connection.
+      
+      
+      let thisLabel = label;
+      if(lastLabel != thisLabel){
+        var ws = new WebSocket('ws://localhost:8765');
+        console.log(label+" is detected");
+        
+        ws.onopen = function() {           
+          // Web Socket is connected, send data using send()
+          //ws.send("Message to send");
+          ws.send(label);
+          if(label=='0'){
+            sendTgMessage(warningMsg);
+            console.log("Telegram sent");
+          }
+          console.log("Opened WS");
+
+        };
+
+       ws.onmessage = function (evt) { 
+          var received_msg = evt.data;
+          console.log(evt.data);
+       };
+
+       ws.onclose = function() { 
+          // websocket is closed.
+          console.log("Closed WS");
+       };
+
+        //ws.close();
+      }
+      lastLabel = thisLabel;
+      
+      ////
+
       goClassify();
     }
   });
@@ -154,3 +202,37 @@ const saveFile = (name, data) => {
   document.body.removeChild(downloadElt);
   URL.revokeObjectURL(url);
 };
+
+// ///////fetch/////////////////////////
+
+const sendHttpRequest = (method, url, data) => {
+  return fetch(url, {
+    method: method,
+    body: JSON.stringify(data),
+    headers: data ? { 'Content-Type': 'application/json' } : {}
+  }).then(response => {
+    if (response.status >= 400) {
+      // !response.ok
+      return response.json().then(errResData => {
+        const error = new Error('Something went wrong!');
+        error.data = errResData;
+        throw error;
+      });
+    }
+    return response.json();
+  });
+};
+
+let tgURLToken = "https://api.telegram.org/bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc/";
+
+  async function sendTgMessage(msg){
+    let TGURL = tgURLToken + "sendMessage?chat_id=843999226&text=";
+    sendHttpRequest('GET', TGURL+msg)
+      .then(responseData => {
+        //console.log(responseData);
+        input.value('');
+      })
+      .catch(err => {
+        //console.log(err, err.data);
+      });
+  }
