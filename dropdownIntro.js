@@ -3,7 +3,7 @@ var DropdownData = [
         "Year" : "2019",
         "Time":["Oct","Summer","Summer","April"],
         "Activities/Experience":[   "<a href='https://www.instagram.com/p/B4HXAbRj5wB/' target='_blank'>SmarTone Hackathon</a>",
-                                    "<a href='#' target="_blank">Work in Murata, WuXi (Intern)</a>",
+                                    "<a href='#' target='_blank'>Work in Murata, WuXi (Intern)</a>",
                                     "<a href='https://www.instagram.com/p/B0FTSRAHbYC/' target='_blank'>Work in Skyworth, ShenZhen (Intern)</a>",
                                     "Hard@UST - Finalist"]
     },{
