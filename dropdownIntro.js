@@ -2,7 +2,7 @@ var DropdownData = [
     {
         "Year" : "2019",
         "Time":["Oct","Summer","Summer","April"],
-        "Activities/Experience":[   "<a href=\"#\">SmarTone Hackathon</a>",
+        "Activities/Experience":[   "<a href='#'>SmarTone Hackathon</a>",
                                     "Work in Murata, WuXi (Intern)",
                                     "Work in Skyworth, ShenZhen (Intern)",
                                     "Hard@UST - Finalist"]
