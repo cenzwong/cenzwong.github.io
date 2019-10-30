@@ -32,7 +32,7 @@ var DropdownData = [
                                     "Entrepreneurial trips to Beijing (Zhongguancun)"]
     },{
         "Year" : "2015",
-        "Time":["sep"],
+        "Time":["Sep"],
         "Activities/Experience":["Enter University!!!!!!"]
     }
 ]
