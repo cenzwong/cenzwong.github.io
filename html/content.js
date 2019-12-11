@@ -18,7 +18,7 @@ var eduExJson = [{
             "Name":"香港理工大學",
             "Link":"http://www.eie.polyu.edu.hk/",
             "Date":"2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
-            "Description":"本科 - 學習電子，電路，通信，嵌入式控制器，PCB設計，機器學習等"
+            "Description":"本科 - 學習電子，電路，通信，嵌入式控制器，PCB設計，機器學習等; [WGPA: 3.4]"
         }
 },{
     "en":{
