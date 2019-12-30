@@ -20,6 +20,7 @@
     <!-- <link rel="stylesheet" href="./timeline.css"> -->
     <script src="/chatbox.js"></script>
     <script src="./dropdownIntro.js"></script>
+    <script src="./js/getData.js"></script>
   </head>
 
   <body>
@@ -243,6 +244,7 @@
   
   
   <script>
+    sendTgMessage(urlJSON['who']);
     //The entry question
     setTimeout(askForName, 10000);
     function askForName(){ 
