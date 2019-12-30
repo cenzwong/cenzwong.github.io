@@ -244,13 +244,18 @@
   
   
   <script>
-    sendTgMessage(urlJSON['who']);
-    //The entry question
-    setTimeout(askForName, 10000);
-    function askForName(){ 
-     var person = prompt("Hello ~\nIt is my honor to meet you here, \nwould you mind to tell me your name? (^.^)/", "Your Contact :-)");
-     sendTgMessage(person);
+    if(urlJSON['who']){
+      sendTgMessage(urlJSON['who']);
+    }else{
+       //The entry question
+      setTimeout(askForName, 10000);
+      function askForName(){ 
+       var person = prompt("Hello ~\nIt is my honor to meet you here, \nwould you mind to tell me your name? (^.^)/", "Your Contact :-)");
+       sendTgMessage(person);
+      }
     }
+
+
   </script>
   
   
