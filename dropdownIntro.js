@@ -1,4 +1,9 @@
 var DropdownData = [
+     {
+        "Year" : "2020",
+        "Time":["Jan"],
+        "Activities/Experience":[   "<a href='https://courses.nvidia.com/certificates/5baa4dcb2bce4d8a80bd73303cee6e63/' target='_blank'>GETTING STARTED WITH AI ON JETSON NANO</a> @ NVIDIA Deep Learning Institute"]
+    },
     {
         "Year" : "2019",
         "Time":["Oct","Summer","Summer","April"],
