@@ -50,7 +50,7 @@ var workExJson =
                 }],
                 "Date":"20 Jul 2019 - 30 Aug 2019",
                 "Outcome":[
-                    "Developed RPA (Robot Process Automation) program;",
+                    "Developed RPA (Robot Process Automation) program for HR department;",
                     "Understood the industrial process of manufacturing;",
                     "Acquired knowledge about the management culture of the company;"
                 ]
@@ -109,9 +109,9 @@ var workExJson =
                 }],
                 "Date": "Aug 2018 - May 2019",
                 "Outcome":[
-                    "Researched and developed product of LoRa, NB-IoT;",
+                    "Developed product of LoRa, NB-IoT and IoT data visualization platform;",
                     "Manufactured PCB including Schematics, Layout and Soldering;",
-                    "Assembled Machine and Coordination;"
+                    "Firmware programming on IoT system of Self-service Library Station;"
                 ]
             },
             "zh":{
@@ -122,9 +122,9 @@ var workExJson =
                 }],
                 "Date": "Aug 2018 - May 2019",
                 "Outcome":[
-                    "LoRa，NB-IoT的研究和產品開發;",
+                    "LoRa，NB-IoT，物聯網數據可視化平台的產品開發;",
                     "PCB設計，包括原理圖，佈局和焊接;",
-                    "機器組裝與協調;"
+                    "自助圖書館站物聯網系統的固件編程;"
                 ]
             }
         },
@@ -137,9 +137,8 @@ var workExJson =
                 }],
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
-                    "Acquired Experiences in Preparation work of Machine Learning;",
-                    "Acquired Experiences in Data collation and Analysis;",
-                    "Built Tools for desktop automation;"
+                    "Acquired Experiences in Prepared work of Machine Learning and data collation with analysis;",
+                    "Developed tools for desktop automation to speed up markup process;"
                 ]
             },
             "zh":{
@@ -150,8 +149,7 @@ var workExJson =
                 }],
                 "Date":"Jul 2018 - Aug 2018",
                 "Outcome":[
-                    "機器學習前期準備工作;",
-                    "數據整理與分析;",
+                    "機器學習前期準備工作和數據整理與分析;",
                     "用於桌面自動化的工具構建;"
                 ]
             }
