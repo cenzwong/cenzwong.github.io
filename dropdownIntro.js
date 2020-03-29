@@ -1,9 +1,11 @@
 var DropdownData = [
      {
         "Year" : "2020",
-        "Time":["Jan","Mar"],
-        "Activities/Experience":[   "<a href='https://courses.nvidia.com/certificates/5baa4dcb2bce4d8a80bd73303cee6e63' target='_blank'>Getting Started with AI on Jetson Nano</a> @ NVIDIA Deep Learning Institute",
-                                    "FINSPIRE Hackathon"    ]
+        "Time":["Mar","Jan"],
+        "Activities/Experience":[   
+                            "FINSPIRE Hackathon",
+                            "<a href='https://courses.nvidia.com/certificates/5baa4dcb2bce4d8a80bd73303cee6e63' target='_blank'>Getting Started with AI on Jetson Nano</a> @ NVIDIA Deep Learning Institute"
+                                        ]
     },
     {
         "Year" : "2019",
