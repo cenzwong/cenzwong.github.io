@@ -10,14 +10,14 @@ var eduExJson = [{
     "en":{
             "Name":"The Hong Kong University of Science and Technology - Big Data Technology",
             "Link":"https://prog-crs.ust.hk/pgprog/2020-21/msc-bdt",
-            "Admission Date":"2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
-            "Description":" "
+            "Date":"2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
+            "Description":"Admission Year 2020"
         },
     "zh":{
             "Name":"香港科技大學 - 大數據科技",
             "Link":"https://prog-crs.ust.hk/pgprog/2020-21/msc-bdt",
-            "Admission Date":"2020 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
-            "Description":" "
+            "Date":"2020 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
+            "Description":"Admission Year 2020"
         }
 },{
     "en":{
