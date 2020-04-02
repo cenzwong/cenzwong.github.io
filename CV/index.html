@@ -2,22 +2,12 @@
 <html>
   <title>Redirect to Cenz Resume</title>
   <head>
-    <script src="./tg.js"></script>
+    <script src="../telegram/tg.js"></script>
   </head>
 
   <body>
         <script>
-            function sendTgMessage(msg){
-                let TGURL = "https://api.telegram.org/bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc/sendMessage?chat_id=843999226&text=";
-                sendHttpRequest('GET', TGURL+msg)
-                    .then(responseData => {
-                    console.log(responseData);
-                    })
-                    .catch(err => {
-                    console.log(err, err.data);
-                    });
-                }
-        sendTgMessage("Some One download Your CV");
+            sendTgMessage("Some One download Your CV");
         </script>
         <meta http-equiv="Refresh" content="0; url=./Cenz_WongTszHo_Resume_20200331.pdf" />
   </body>  
