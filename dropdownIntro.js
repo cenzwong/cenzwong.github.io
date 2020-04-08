@@ -2,7 +2,7 @@ var DropdownData = [
      {
         "Year" : "2020",
         "Time":["Apr","Apr","Mar","Jan"],
-        "Activities/Experience":[   "<a href='https://coursera.org/share/c161de11abc6db78e01ef5a01b74f540' target='_blank'>Machine Learning with Python</a> by IBM on Coursera",    
+        "Activities/Experience":[   "<a href='https://www.coursera.org/account/accomplishments/records/6V8RMF74T37B' target='_blank'>Machine Learning with Python</a> by IBM on Coursera",    
                                     "<a href='https://certificates.mooc.fi/validate/rxz2bdjqpdb' target='_blank'>Elements of AI</a> @ University of Helsinki",   
                                     "FINSPIRE Hackathon",
                                     "<a href='https://courses.nvidia.com/certificates/5baa4dcb2bce4d8a80bd73303cee6e63' target='_blank'>Getting Started with AI on Jetson Nano</a> @ NVIDIA Deep Learning Institute"
