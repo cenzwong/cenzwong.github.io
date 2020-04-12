@@ -4,7 +4,7 @@ var DropdownData = [
         "Time":["Apr", "Apr","Mar","Jan"],
         "Activities/Experience":[   "Acquiring<a href='https://www.coursera.org/account/accomplishments/professional-cert/3WVTCP6GYS8J' target='_blank'> IBM AI Engineering Specialization Certificate</a> @ Coursera\
                                     <p>Earned after completing ...\
-                                    <ol>\
+                                    <ol style='margin-left: 10px; padding-left: 10px;'>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/6V8RMF74T37B' target='_blank'>Machine Learning with Python</a></li>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/RKJTMANZBVHS' target='_blank'>Scalable Machine Learning on Big Data using Apache Spark</a></li>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/FVF94NY6F8D4' target='_blank'>Introduction to Deep Learning & Neural Networks with Keras</a></li>\
