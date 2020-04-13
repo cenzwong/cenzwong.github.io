@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: cenzwong.github.io
+Token: 125216f64f5c27b3d7abef8c8725c16b7591de5382894c04f9b23584ab240f3f
