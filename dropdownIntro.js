@@ -2,7 +2,7 @@ var DropdownData = [
      {
         "Year" : "2020",
         "Time":["Jun","May","Apr", "Apr","Mar","Jan"],
-        "Activities/Experience":[   "Acquiring<a href='https://www.coursera.org/account/accomplishments/professional-cert/7N7T7A29X3QK' target='_blank'> IBM AI Engineering Specialization Certificate</a> @ Coursera\
+        "Activities/Experience":[   "Acquiring<a href='https://www.coursera.org/account/accomplishments/professional-cert/7N7T7A29X3QK' target='_blank'> IBM Data Science Specialization Certificate</a> @ Coursera\
                                     <p>Earned after completing ...\
                                     <ol style='margin-left: 10px; padding-left: 10px;'>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/AUUGQPDLYH7C' target='_blank'>What is Data Science?</a></li>\
@@ -11,11 +11,12 @@ var DropdownData = [
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/38MDJ8ESQCH7' target='_blank'>Python for Data Science and AI</a></li>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/DHGKRB7PRTCP' target='_blank'>Databases and SQL for Data Science</a></li>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/URTHR3KQ4LLS' target='_blank'>Data Analysis with Python</a></li>\
-                                    <li><a href='https://www.coursera.org/account/accomplishments/verify/5AVUVGAFTFWH' target='_blank'>Data Visualization with Python/a></li>\
-                                    <li><a href='https://www.coursera.org/account/accomplishments/verify/6V8RMF74T37B' target='_blank'>Machine Learning with Python</a></li>\ 
+                                    <li><a href='https://www.coursera.org/account/accomplishments/verify/5AVUVGAFTFWH' target='_blank'>Data Visualization with Python</a></li>\
+                                    <li><a href='https://www.coursera.org/account/accomplishments/verify/6V8RMF74T37B' target='_blank'>Machine Learning with Python</a></li>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/JQ2RU8RDDLHW' target='_blank'>Applied Data Science Capstone</a></li>\
-                                    </ol></p>\
-                                    ", "<a href='https://www.coursera.org/account/accomplishments/verify/3YQ32LG3KSRD' target='_blank'>Crash Course on Python</a> @ Google", 
+                                    </ol></p>"
+                                    ,
+                                     "<a href='https://www.coursera.org/account/accomplishments/verify/3YQ32LG3KSRD' target='_blank'>Crash Course on Python</a> @ Google", 
                                     "Acquiring<a href='https://www.coursera.org/account/accomplishments/professional-cert/3WVTCP6GYS8J' target='_blank'> IBM AI Engineering Specialization Certificate</a> @ Coursera\
                                     <p>Earned after completing ...\
                                     <ol style='margin-left: 10px; padding-left: 10px;'>\
