@@ -1,5 +1,10 @@
 # Lesson 2 Use of Pandas 140620
 
+## Homwork
+Write a function called max-return("2019-09-01",List_Stock_code)
+Tell you back the highest return. 
+highest return = (Today price, - old price) / old price, * 100
+
 ## Pandas
 
 ```python 
