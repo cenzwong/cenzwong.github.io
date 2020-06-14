@@ -1,4 +1,82 @@
-# Lesson 2 Basic Python 140620
+# Lesson 2 Use of Pandas 140620
+
+## Pandas
+
+```python 
+import pandas as pd
+```
+
+Shortform:
+object | Shortform
+---|---
+pd.DataFrame | df
+pd.Series | ds / ser
+
+df consist a lot of ds, and getting out one colum, it will become ds
+
+```Python
+# pd.Series
+data = pd.Series([0.25, 0.5, 0.75, 1.0])
+>> ======
+0    0.25
+1    0.50
+2    0.75
+3    1.00
+dtype: float64
+========
+data = pd.Series([0.25, 0.5, 0.75, 1.0],index=["a","b","c","d"])
+>> ======
+a    0.25
+b    0.50
+c    0.75
+d    1.00
+dtype: float64
+========
+# You can also create Series with Dictionary
+
+data[(data>0.6) & (data<1)]
+data[(data>0.6) and (data < 1)] # <----- it has error
+# note that python is valid to use "and" like, True and False --> False, but not with pandas
+# same for "or , | "
+
+# They are just the same
+df[df.Income<3000]
+df[df["Income"]<3000]
+
+```
+
+```python
+Dict1={"A1":1,"A2":2,"A3":3,"A4":4}
+Dict2={"A1":"Peter","A2":"Victor","A3":"Albert","A4":"Alice"}
+Dict3={"A1":1000,"A2":20000,"A3":3000,"A4":4000}
+Dict4={"A1":"Lee","A2":"Chan","A3":"Tam","A4":"Cheung"}
+
+ID=pd.Series(Dict1)
+First_Name=pd.Series(Dict2)
+Income=pd.Series(Dict3)
+Last_Name=pd.Series(Dict4)
+df=pd.DataFrame({"ID":ID,"First_Name":First_Name,
+                 "Income":Income,"Last_Name":Last_Name})
+
+
+df
+
+>> ======
+ID	First_Name	Income	Last_Name
+A1	1	Peter	1000	Lee
+A2	2	Victor	20000	Chan
+A3	3	Albert	3000	Tam
+A4	4	Alice	4000	Cheung
+=========
+```
+
+- Series
+    - The Series element must be in same type (eg: float64)
+- Dataframe
+
+Comment:
+- The index can be like stock code.
+https://www.kdnuggets.com/2019/10/5-advanced-features-pandas.html
 
 ## Dictionary
 It has key-value pairs
@@ -9,6 +87,20 @@ Before Pandas, we use dictionary to hold a structure table.
 Colum | Colum is Key | Colum is Key
 ---|---|---
 List holding Value| List 2| List 3
+
+myDict = {"myKey":"myVal"}\
+myDict["myKey"] 
+
+```Python
+# Series to list
+list(df.Column)
+df.Column.to_list()
+
+# list to Series
+pd.Series([])
+
+```
+
 
 # Lesson 1 Basic Python 070620
 ## Self into note
