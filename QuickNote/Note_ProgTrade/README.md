@@ -1,4 +1,16 @@
-# Lesson one 070620
+# Lesson 2 Basic Python 140620
+
+## Dictionary
+It has key-value pairs
+Value can be any "Python data object" (eg, List, Dictionary, Dataframe, String)
+
+Before Pandas, we use dictionary to hold a structure table.
+
+Colum | Colum is Key | Colum is Key
+---|---|---
+List holding Value| List 2| List 3
+
+# Lesson 1 Basic Python 070620
 ## Self into note
 
 MetaStock, EasyLang, EA, MT4, Multichart, IB, MQL etc
