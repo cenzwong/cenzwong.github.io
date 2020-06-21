@@ -1,3 +1,14 @@
+# Lesson 3 Data man & Automation in Python
+## Last lecture answer: Exercise_three_v1_2.ipynb
+
+- Pandas selecting one row is using Pandas.iloc[num]
+
+
+
+## Summary
+DateType is not string, it is a number, it is integer. 
+
+
 # Lesson 2 Use of Pandas 140620
 
 ## Homwork
