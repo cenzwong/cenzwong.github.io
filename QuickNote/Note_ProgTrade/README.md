@@ -185,7 +185,8 @@ straegy, MHI 5M, ADX indicator
 
 Trade FX, CFD, Option
 
-U.S. Dollar Index <--> HSI, negative correlated.
+U.S. Dollar Index <--> ^HSI, negative correlated.
+
 
 
 BackTest** Automation**
