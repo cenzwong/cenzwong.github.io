@@ -1,9 +1,50 @@
 # Lesson 3 Data man & Automation in Python
+## Data concatenating
+
+- Right (axis=1)
+- Bottom (axis=0)
+
+```python
+df3["Age_Group"] = np.where(df3.Age >= 40,"M","Y")
+
+# append more column with condition
+```
+
+Joining two table, the element (left_on) can be list.
+```python
+df5=pd.merge(left=df3,right=df4,how="left",left_on="Name",right_on="Name")
+df5=pd.merge(left=df3,right=df4,how="inner",left_on="Name",right_on="Name")
+```
+
+## Data aggregation
+From day to week, 
+- Open --> First
+- High --> Max
+- Low --> Min
+- Close --> Last
+- Volume --> Sum
+
+Basic python is using "None" to represent missing value
+Pandas python is using NaN to represent missing Value
+
+```python
+data_weekly=data.groupby(["Year","Week"]).agg({'Open':'first', 
+                                       'High':'max', 
+                                               'Low':'min', 
+                                               'Close':'last',
+                                               'Volume':'sum',
+                                              "Date":"first"})
+
+# That is multiple level index with Year, and Week.
+# The sum, first, are those built in function.
+data_weekly.index=data_weekly["Date"]
+data_weekly.head()
+
+```
+
 ## Last lecture answer: Exercise_three_v1_2.ipynb
 
 - Pandas selecting one row is using Pandas.iloc[num]
-
-
 
 ## Summary
 DateType is not string, it is a number, it is integer. 
