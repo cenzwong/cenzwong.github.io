@@ -1,4 +1,21 @@
 # Lesson 3 Data man & Automation in Python
+## Data visualization
+
+
+## Task scheduler
+1. ```bash  
+    // Find the path of Python
+    where python
+   ```
+2. Open Task scheduler
+3. Disable Log on function
+
+or on Cloud. (vps) or on NAS
+
+Windows Task scheduler, 
+1. Need to specify the path of Python, 
+2. Need to specify the path of Python Script.
+
 ## Data concatenating
 
 - Right (axis=1)
@@ -164,9 +181,12 @@ pd.Series([])
 
 MetaStock, EasyLang, EA, MT4, Multichart, IB, MQL etc
 
-straegy, MHI 5M
+straegy, MHI 5M, ADX indicator
 
 Trade FX, CFD, Option
+
+U.S. Dollar Index <--> HSI, negative correlated.
+
 
 BackTest** Automation**
 
