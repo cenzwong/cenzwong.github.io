@@ -1,4 +1,29 @@
+# Lesson 5 Technical analysis
+please refer to the following link for details on the use of the TA-Lib please refer to the following link, you need to build the source from scratch.
+
+https://mrjbq7.github.io/ta-lib/doc_index.html
+
+You could click here and search for the latest version of TAlib package file   
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+**Note:** It is very difficult to install the original python package! Don't try to do that lol
+
+installation
+```python 
+import sys
+!{sys.executable} -m pip install "D:/TA_Lib-0.4.17-cp37-cp37m-win32.whl"
+```
+
+Homework: 
+use candle stick two chart
+Add a line, for MACD 9x19x50
+Middle RSI
+MACD
+Volume
+
 # Lesson 4 Data Visualization
+<a href="http://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter Notebook/Lesson 4/CZ_Data Visualization_student_v9.htm">Python Code with HTML</a>
 ## Library
 Package name | Short Form 
 ---|---
@@ -9,6 +34,7 @@ yfinance | yf
 matplotlib.pyplot | plt
 datetime | dt
 matplotlib.dates | mdates
+talib | TA
 
 ## Plot
 ```python
@@ -85,6 +111,14 @@ ohlc.head()
 
 # convert the date into the custom format
 ohlc["Date"] = ohlc["Date"].apply(mdates.date2num)
+
+f1, ax = plt.subplots(figsize = (15,10))
+
+candlestick_ohlc(ax, ohlc.values, width=0.8, colorup='green', colordown='red')
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+ax.grid(True)
+
+plt.show()
 ```
 
 # Lesson 3 Data Mgnt & Automation in Python
