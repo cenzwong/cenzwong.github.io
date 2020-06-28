@@ -8,6 +8,7 @@ Tensorflow|tf
 yfinance | yf
 matplotlib.pyplot | plt
 datetime | dt
+matplotlib.dates | mdates
 
 ## Plot
 ```python
@@ -60,6 +61,30 @@ This shows the percentage change of the close price with ten data running. And d
 ``` python
 data["Close"].pct_change().rolling(window=10).std().plot(figsize=(16,4))
 plt.show()
+```
+
+## candlestick chart
+
+We could use candlestick_ohlc and candlestick2_ohlc for the generation of the candlestick chart
+
+```python
+import sys
+!{sys.executable} -m pip install https://github.com/matplotlib/mpl_finance/archive/master.zip
+
+from mpl_finance import candlestick2_ohlc
+from mpl_finance import candlestick_ohlc
+import matplotlib.dates as mdates
+%matplotlib inline
+
+```
+The candle stick2 package is used to solve the SAT, SUN no transaction issue.
+**NOTE:** The sequence must be in order
+```python
+ohlc= data[['Date', 'Open', 'High', 'Low','Close',"Volume"]].copy()
+ohlc.head()
+
+# convert the date into the custom format
+ohlc["Date"] = ohlc["Date"].apply(mdates.date2num)
 ```
 
 # Lesson 3 Data Mgnt & Automation in Python
