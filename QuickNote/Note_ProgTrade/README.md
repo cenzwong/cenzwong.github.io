@@ -1,4 +1,58 @@
-# Lesson 3 Data man & Automation in Python
+# Lesson 4 Data Visualization
+## Library
+Package name | Short Form 
+---|---
+Numpy | np 
+Pandas | pd
+Tensorflow|tf
+yfinance | yf
+matplotlib.pyplot | plt
+datetime | dt
+
+## Plot
+```python
+f1, ax = plt.subplots(figsize = (15,10))
+ax.plot(data["Date"],data["Close"],color="blue",label="Close",linewidth=1)
+ax.grid(True)
+plt.show()
+```
+
+- | - |- |-
+---|--- | ---| ---
+(0,0) | (1,0) | (2,0) | (3,0) 
+(0,1) | (1,1) | (2,1) | (3,1) 
+(0,2) | (1,2) | (2,2) | (3,2) 
+(0,3) | (1,3) | (2,3) | (3,3) 
+
+```python
+# first create the outer space
+fig = plt.figure(figsize = (15,10))
+
+# The subplot as 5 row, 4 column, make the first plot start as 0,0 and it conqerer 4x4 area.
+ax1 = plt.subplot2grid((5,4), (0,0), rowspan=4, colspan=4)
+
+ax1.plot(data["Date"],data["Close"],color="blue",label="Close",linewidth=1)
+ax1.grid(True)
+
+# The subplot as 5 row, 4 column, make the second plot start as 4,0 and it conqerer 1x4 area.
+ax1v = plt.subplot2grid((5,4), (4,0), sharex=ax1, rowspan=1, colspan=4)
+# re-assign the tick labels 
+ax1v.axes.yaxis.set_ticklabels(["Volume"])
+ax1v.grid(False)
+#ax1v.set_ylim(0, data["Volume"].max())
+# hide the plot 1 x axis label
+plt.setp(ax1.get_xticklabels(), visible=False) 
+# convert into bar chart
+ax1v.bar(data["Date"],data["Volume"])
+# stick both chart tgt
+plt.subplots_adjust(hspace=0)
+ax1.legend(loc="upper left")
+
+plt.show()
+```
+
+
+# Lesson 3 Data Mgnt & Automation in Python
 ## Data visualization
 
 
