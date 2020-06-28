@@ -51,6 +51,16 @@ ax1.legend(loc="upper left")
 plt.show()
 ```
 
+## Box plot
+It shows the analysis on the distrbution.
+![alt text](https://miro.medium.com/max/18000/1*2c21SkzJMf3frPXPAR_gZA.png "Box Plot")
+
+## Code explain
+This shows the percentage change of the close price with ten data running. And do a standard deviation on the data
+``` python
+data["Close"].pct_change().rolling(window=10).std().plot(figsize=(16,4))
+plt.show()
+```
 
 # Lesson 3 Data Mgnt & Automation in Python
 ## Data visualization
