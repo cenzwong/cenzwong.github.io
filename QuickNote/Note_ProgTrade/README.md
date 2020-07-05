@@ -1,4 +1,14 @@
 # Lesson 5 Technical analysis
+
+<a href="http://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter Notebook/Lesson 4/CZ_Technical_Analysis_MHI_27062020_v2_5
+">Python Code with HTML</a>
+
+## Notes loss ...
+BackTest
+- max drawdown
+- win-loss ratio (>50%)
+- profit rate
+
 please refer to the following link for details on the use of the TA-Lib please refer to the following link, you need to build the source from scratch.
 
 https://mrjbq7.github.io/ta-lib/doc_index.html
