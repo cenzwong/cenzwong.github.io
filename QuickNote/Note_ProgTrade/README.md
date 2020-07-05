@@ -1,7 +1,5 @@
 # Lesson 5 Technical analysis
-
-<a href="http://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter Notebook/Lesson 4/CZ_Technical_Analysis_MHI_27062020_v2_5
-">Python Code with HTML</a>
+<a href="https://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter%20Notebook/Lesson%205/CZ_Technical_Analysis_MHI_27062020_v2_5.html">Python Code with HTML</a>
 
 ## Notes loss ...
 BackTest
@@ -33,7 +31,7 @@ MACD
 Volume
 
 # Lesson 4 Data Visualization
-<a href="http://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter Notebook/Lesson 4/CZ_Data Visualization_student_v9.htm">Python Code with HTML</a>
+<a href="https://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter%20Notebook/Lesson%204/CZ_Data%20Visualization_student_v9.html">Python Code with HTML</a>
 ## Library
 Package name | Short Form 
 ---|---
