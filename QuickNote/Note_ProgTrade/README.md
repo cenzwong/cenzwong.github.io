@@ -1,4 +1,75 @@
-# Lesson 6 
+# Lesson 6 Backtesting
+
+Impove
+- Previous peak/Bottom
+- Not Trending => Do not trend ( ADX <= 25 ) // swing trade
+- Proposal: Enter when ADX > 25
+- EMA5 uptrend. MOM indicator
+- Slope of EMA is positive => Enter
+- Multi timeframe (e.g. daily => hourly)
+- Enter with limit order (e.g. high price of bar with MACD crossover up)
+- Use other timeframe (e.g. 1 hour => 4 hour => 1 day)
+- Exit signal: may use candle stick pattern ( reversal pattern e.g.hanging man/shooting star/evening star etc)
+- Exit: for daily bar detect bearish divergence (RSI/MACD)
+Short:
+- MACD_crossoverdown(2800) => Long 7500
+- MACD_crossoverup(2800) => Flat 7500 + Long 2800
+
+Date | OHLCV(2800) | MACD(2800) | MACD_crossoverup(2800) | MACD_crossoverdown(2800) | OHLCV(7500)
+---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+
+MACD crossover, tell uptrend and down trend
+
+Date | Open | High | Low | Close | TA | Trigger(Enter) | Trigger(Exit)
+---|---|---|---|---|---|---|---|---|
+
+- Procedure:
+- Set flag = 0
+- Create empty lists:
+    - Trade_type
+    - trade_OpenDate
+    - trade_OpenPrice
+    - trade_CloseData
+    - trade_ClosePrice
+    - Trade_exitReason
+- For each row of dataframe:
+    - If (enter signal triggered) & flag == 0:
+        - Get the datatime -> date2
+        - Get the price -> price2 ( Open price @ next bar)
+        - Set Flag = 1
+        - Append date2 and price2 into list trade_OpenDate and trade_OpenPrice
+        - Continue with the next iteration
+    - If Exit condition triffered & flag == 1: (e.g. due to stoploss/profit target/others criteria)
+        - Get the datatime -> date3
+        - Get the price -> price3 ( Open price @ next bar)
+        - Set flag = 0
+        - Append date3 and price3 into list trade_CloseData and trade_ClosePrice
+        - Append exit reason into list Trade_exitReason
+        - Continue with the next iteration
+
+
+``` python 
+# way to add more TA data
+df1["Date1"]=df1["Date"].dt.date
+df1["Date1"]=pd.to_datetime(df1["Date1"],format="%Y-%m-%d")
+df1["Year"]=df1["Date"].dt.year
+df1["Week"]=df1["Date"].dt.week
+df1["Month"]=df1["Date"].dt.month
+df1["hour"]=df1["Date"].dt.hour
+df1["Gap"]=df1["Open"]-df1["Close"].shift()
+df1["Volatility"]=df1["High"]-df1["Low"]
+df1["Return"]=df1["Close"]-df1["Close"].shift()
+df1["EMA9"]=TA.EMA(df1["Close"],9)
+df1["EMA19"]=TA.EMA(df1["Close"],19)
+df1["EMA50"]=TA.EMA(df1["Close"],50)
+df1["ADX"]=TA.ADX(df1["High"],df1["Low"],df1["Close"])
+df1["DMI+"]=TA.PLUS_DM(df1["High"],df1["Low"])
+df1["DMI-"]=TA.MINUS_DM(df1["High"],df1["Low"])
+df1["RSI9"]=TA.RSI(df1["Close"],9)
+df1["macd"],df1["macdsignal"],df1["macdhist"]=TA.MACD(df1["Close"],fastperiod=5, slowperiod=34, signalperiod=5)
+
+```
 
 # Lesson 5 Technical analysis
 <a href="https://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter%20Notebook/Lesson%205/CZ_Technical_Analysis_MHI_27062020_v2_5.html">Python Code with HTML</a>
