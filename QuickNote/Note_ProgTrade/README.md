@@ -20,6 +20,7 @@ Backtesting Strategy (2800+7500)
         - Flat 7500 and long 2800
 ---
 Impove
+---
 - Previous peak/Bottom
 - Not Trending => Do not trend ( ADX <= 25 ) // swing trade
 - Proposal: Enter when ADX > 25
@@ -35,6 +36,7 @@ Short:
 - MACD_crossoverup(2800) => Flat 7500 + Long 2800
 
 Processed dataframe (Use concate dataframe)
+---
 Date | OHLCV(2800) | MACD(2800) | MACD_crossoverup(2800) | MACD_crossoverdown(2800) | OHLCV(7500)
 ---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
