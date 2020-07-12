@@ -1,6 +1,5 @@
 # Lesson 6 Backtesting
-<a href="https://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter%20Notebook/Lesson%206/CZ_Backtesting_2800_v2.html
-">Note</a>  
+<a href="https://cenzwong.github.io/QuickNote/Note_ProgTrade/Jupyter%20Notebook/Lesson%206/CZ_Backtesting_2800_v2.html">Note</a>  
 Homework  
 
 ---
