@@ -1,5 +1,24 @@
 # Lesson 6 Backtesting
 
+Homework  
+---
+Backtesting Strategy (2800+7500)
+- Daily
+- Long:
+    - Enter:
+        - MACD_crossoverup(2800) & Close(2800) > EMA50 & ADX(2800) >= 25
+    - Exit:
+        - Stoploss or profit target or (Shooting Star/Hanging man)
+            - Flat(2800)
+        - MACD_crossoverdown(2800) 
+            - Flat 2800 + Long 7500 ( next bar @ Open price)
+- Short:
+    - Enter: Long 7500
+    - Exit: profit target or stoploss 
+        - Flat 7500)
+    - MACD(2800) cross over up 
+        - Flat 7500 and long 2800
+---
 Impove
 - Previous peak/Bottom
 - Not Trending => Do not trend ( ADX <= 25 ) // swing trade
@@ -15,6 +34,7 @@ Short:
 - MACD_crossoverdown(2800) => Long 7500
 - MACD_crossoverup(2800) => Flat 7500 + Long 2800
 
+Processed dataframe (Use concate dataframe)
 Date | OHLCV(2800) | MACD(2800) | MACD_crossoverup(2800) | MACD_crossoverdown(2800) | OHLCV(7500)
 ---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
