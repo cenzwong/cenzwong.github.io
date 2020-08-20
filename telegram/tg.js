@@ -63,8 +63,8 @@ function tgTokenDecode(priFac, myString){
     return myReturn
 }
 
-// let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"AAGIeod1naDm5q0nBq5ADUmg0_eIFBFsGLs");
-let tgURLToken = "https://api.telegram.org/bot941539918:AAGSMN-3Ug9OJIQiP28D0oBxWSZoWxI525k/";
+let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"AAGSMN-3Ug9OJIQiP28D0oBxWSZoWxI525k");
+// let tgURLToken = "https://api.telegram.org/bot941539918:AAGSMN-3Ug9OJIQiP28D0oBxWSZoWxI525k/";
 
 
   async function sendTgMessage(msg){
