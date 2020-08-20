@@ -55,7 +55,7 @@ function sendMsg(){
 
 function tgTokenDecode(priFac, myString){
     myReturn = priFac2val(priFac)+ ":" + atob(atob(myString)) + "/";
-    return myReturn
+    return myReturn;
 }
 
 function priFac2val(priFac){
