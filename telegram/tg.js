@@ -55,12 +55,17 @@ function sendMsg(){
 }
 
 function tgTokenDecode(priFac, myString){
+    Mul = priFac2val(priFac)
+    myReturn = string(Mul)+ ":" + myString + "/";
+    return myReturn
+}
+
+function priFac2val(priFac){
     let Mul = 1;
     for(var i = 0; i < length(priFac); i++){
         Mul = Mul*priFac[i]
     }
-    myReturn = string(Mul)+ ":" + myString + "/";
-    return myReturn
+    return Mul;
 }
 
 let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"AAGSMN-3Ug9OJIQiP28D0oBxWSZoWxI525k");
