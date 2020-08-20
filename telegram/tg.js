@@ -58,10 +58,10 @@ function tgTokenDecode(priFac, myString){
     return myReturn;
 }
 
-function priFac2val(priFac){
-    let Mul = 1;
-    for(var i = 0; i < priFac.length; i++){
-        Mul = Mul*priFac[i]
+function priFac2val(priFacA){
+    var Mul = 1;
+    for(var i = 0; i < priFacA.length; i++){
+        Mul = Mul*priFacA[i]
     }
     console.log("myID:"+ Mul.toString())
     return Mul.toString();
