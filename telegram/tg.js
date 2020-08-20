@@ -35,7 +35,6 @@ const sendHttpRequest = (method, url, data) => {
   function draw() {
     //checkMsg();
     
- 
   }
 
 var myVar = setInterval(myTimer, 1000);
