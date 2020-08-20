@@ -104,4 +104,4 @@ function priFac2val(priFac){
   }
 
 let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
-let cenz = priFac2val[2 , 7 , 7 , 761 , 11317].toString()
+let cenz = priFac2val[2 , 7 , 7 , 761 , 11317].toString();
