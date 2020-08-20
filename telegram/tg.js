@@ -63,12 +63,13 @@ function priFac2val(priFacA){
     for(var i = 0; i < priFacA.length; i++){
         Mul = Mul*priFacA[i]
     }
-    console.log("myID:"+ Mul.toString())
     return Mul.toString();
 }
 
   async function sendTgMessage(msg){
     let TGURL = tgURLToken + "sendMessage?chat_id="+ cenz +"&text=";
+    console.log("TGURL:"+ TGURL)
+
     sendHttpRequest('GET', TGURL+msg)
       .then(responseData => {
         //console.log(responseData);
