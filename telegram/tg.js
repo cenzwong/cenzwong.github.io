@@ -47,14 +47,25 @@ function myTimer() {
   setTimeout(function(){ getTgMessage(); }, 1500);
 }
   
-  
+
 function sendMsg(){
   var d = new Date();
     sendTgMessage(urlJSON['name']+" replied: "+input.value());
     messageRecord.html(messageRecord.html() +"<br/>"+d.toLocaleTimeString() +"<=" +input.value());
 }
 
-  let tgURLToken = "https://api.telegram.org/bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc/";
+function tgTokenDecode(priFac, myString){
+    let Mul = 1;
+    for(var i = 0; i < length(priFac); i++){
+        Mul = Mul*priFac[i]
+    }
+    myReturn = string(Mul)+ ":" + myString + "/";
+    return myReturn
+}
+
+// let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"AAGIeod1naDm5q0nBq5ADUmg0_eIFBFsGLs");
+let tgURLToken = "https://api.telegram.org/bot941539918:AAGSMN-3Ug9OJIQiP28D0oBxWSZoWxI525k/";
+
 
   async function sendTgMessage(msg){
     let TGURL = tgURLToken + "sendMessage?chat_id=843999226&text=";
