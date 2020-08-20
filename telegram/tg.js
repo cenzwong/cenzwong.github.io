@@ -1,3 +1,6 @@
+var tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
+var cenz = priFac2val[2 , 7 , 7 , 761 , 11317];
+
 const sendHttpRequest = (method, url, data) => {
     return fetch(url, {
       method: method,
@@ -102,6 +105,3 @@ function priFac2val(priFacA){
         console.log(err, err.data);
       });
   }
-
-var tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
-var cenz = priFac2val[2 , 7 , 7 , 761 , 11317];
