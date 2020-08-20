@@ -62,7 +62,7 @@ function tgTokenDecode(priFac, myString){
 
 function priFac2val(priFac){
     let Mul = 1;
-    for(var i = 0; i < length(priFac); i++){
+    for(var i = 0; i < priFac.length; i++){
         Mul = Mul*priFac[i]
     }
     return Mul;
