@@ -66,6 +66,7 @@ function priFac2val(priFacA){
     for(var i = 0; i < priFacA.length; i++){
         Mul = Mul*priFacA[i]
     }
+    console.log("num: "+ Mul.toString())
     return Mul.toString();
 }
 
