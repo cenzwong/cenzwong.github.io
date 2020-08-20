@@ -70,10 +70,10 @@ function priFac2val(priFac){
 
 let tgURLToken = "https://api.telegram.org/bot"+ tgTokenDecode([2,11,181,236449],"AAGSMN-3Ug9OJIQiP28D0oBxWSZoWxI525k");
 // let tgURLToken = "https://api.telegram.org/bot941539918:AAGSMN-3Ug9OJIQiP28D0oBxWSZoWxI525k/";
-
+let cenz = string(priFac2val[2 , 7 , 7 , 761 , 11317])
 
   async function sendTgMessage(msg){
-    let TGURL = tgURLToken + "sendMessage?chat_id=843999226&text=";
+    let TGURL = tgURLToken + "sendMessage?chat_id="+ cenz +"&text=";
     sendHttpRequest('GET', TGURL+msg)
       .then(responseData => {
         //console.log(responseData);
