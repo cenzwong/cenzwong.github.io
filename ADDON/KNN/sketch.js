@@ -33,9 +33,13 @@ function setup() {
   button.position(19, 19);
   button.mousePressed(addLabel1);
 
-  button = createButton('Label 1');
-  button.position(19, 19);
-  button.mousePressed(addLabel1);
+  button = createButton('Label 2');
+  button.position(90, 19);
+  button.mousePressed(addLabel2);
+
+  button = createButton('Label 3');
+  button.position(160, 19);
+  button.mousePressed(addLabel3);
 }
 
 function addLabel1(){
@@ -48,6 +52,12 @@ function addLabel2(){
     const logits = features.infer(video);
     knn.addExample(logits, '2');
     console.log('2 add');
+}
+
+function addLabel3(){
+    const logits = features.infer(video);
+    knn.addExample(logits, '3');
+    console.log('3 add');
 }
 
 
