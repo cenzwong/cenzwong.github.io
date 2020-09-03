@@ -27,6 +27,12 @@ function setup() {
   labelP.style('font-size', '32pt');
   x = width / 2;
   y = height / 2;
+
+  //===== Create Button ======
+  button = createButton('Label 1');
+  button.position(19, 19);
+  button.mousePressed(addLabel1);
+
   button = createButton('Label 1');
   button.position(19, 19);
   button.mousePressed(addLabel1);
@@ -36,6 +42,12 @@ function addLabel1(){
     const logits = features.infer(video);
     knn.addExample(logits, '1');
     console.log('1 add');
+}
+
+function addLabel2(){
+    const logits = features.infer(video);
+    knn.addExample(logits, '2');
+    console.log('2 add');
 }
 
 
