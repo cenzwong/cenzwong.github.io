@@ -24,8 +24,8 @@ var eduExJson = [{
             "Name":"The Hong Kong Polytechnic University - Electronic and Information Engineering",
             "Link":"http://www.eie.polyu.edu.hk/",
             "Date":"2015 - 2020",
-            "Description":"<p>Bachelor Degree[WGPA: 3.4]</p>\
-                <p>Studying Electronics, Circuit, Communication, \
+            "Description":"<p>Bachelor Degree[WGPA: 3.4]<br>\
+                Studying Electronics, Circuit, Communication, \
                 Embedded Controller, PCB design, Machine Learning etc;</p>\
                 <p>Course Highlight:<br>---<br>\
                 EIE568 IoT - Tools and Application<br>\
