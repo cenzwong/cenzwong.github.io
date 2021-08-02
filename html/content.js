@@ -25,7 +25,17 @@ var eduExJson = [{
             "Link":"http://www.eie.polyu.edu.hk/",
             "Date":"2015 - 2020",
             "Description":"Bachelor Degree - Studying Electronics, Circuit, Communication, \
-             Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]"
+             Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]\
+             Course Highlight:<br>\
+             ---<br>\
+             EIE568 IoT - Tools and Application<br>\
+             EIE569 Sensor Networks<br>EIE4100 Computer Vision and Pattern Recognition<br>\
+             EIE4105 Multi-model Human Computer interaction Technology<br>\
+             EIE4413 Digital Signal Processing<br>\
+             EIE4435 Image and Audio Processing<br>\
+             EIE4433 Honors Project: Model Compression for On-Device Deep Learning<br>
+
+            "
         },
     "zh":{
             "Name":"香港理工大學 - 電子及資訊工程",
@@ -243,17 +253,19 @@ var scoreLangJson =  {
         }  
     ],
     "computer":[
-        ["C/C++/ Embedded","90"],
+        ["C/C++/ Embedded","75"],
         ["Matlab / Octave","76"],
-        ["Python / MicroPython","70"]            
+        ["Python / MicroPython","85"]            
     ]
 };
 
 var scoreSkillJson = [
-    ["MCU programming (STM32/Atmel SAML/Arduino/ESP32)","80"],
-    ["Embedded Linux (Raspberry Pi)","80"],
+    ["Embedded Linux (Raspberry Pi/Edgeline)","80"],
+    ["Docker/Kubernetes","75"],
+    ["MCU programming (STM32/Atmel SAML/Arduino/ESP32)","75"],
     ["Electronic Practice/PCB Schematic/Layout","70"],
     ["Machine Learning/AI","75"],
+    ["Big Data Technology","70"],
     ["App development","45"] 
 ]
 ;
