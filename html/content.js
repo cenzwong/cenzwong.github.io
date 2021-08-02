@@ -84,6 +84,34 @@ var workExJson =
         },
         {
             "en":{
+                "Pos_Com":"Summer Intern (Business Engineer Department) / Wuxi Murata Electronics Co., Ltd.",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link":"https://www.murata.com/"
+                }],
+                "Date":"20 Jul 2019 - 30 Aug 2019",
+                "Outcome":[
+                    "Developed RPA (Robot Process Automation) program for HR department;",
+                    "Understood the industrial process of manufacturing;",
+                    "Acquired knowledge about the management culture of the company;"
+                ]
+            },
+            "zh":{
+                "Pos_Com":"暑期實習 / 日本村田電子有限公司(無錫)",
+                "info":[{
+                    "icon":"fa-globe",
+                    "Link":"https://www.murata.com/"
+                }],
+                "Date":"20 Jul 2019 - 30 Aug 2019",
+                "Outcome":[
+                    "開發RPA（機器人過程自動化）程序;",
+                    "了解製造業的工業過程;",
+                    "了解公司的管理文化;"
+                ]
+            }
+        },
+        {
+            "en":{
                 "Pos_Com":"Summer Intern (Embedded Middleware Team) / Shenzhen Skyworth-RGB Electronic Co Ltd",
                 "info":[{
                     "icon":"fa-globe",
