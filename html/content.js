@@ -10,27 +10,27 @@ var eduExJson = [{
     "en":{
             "Name":"The Hong Kong University of Science and Technology - Big Data Technology",
             "Link":"https://prog-crs.ust.hk/pgprog/2020-21/msc-bdt",
-            "Date":"2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
+            "Date":"2020 - 2022 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
             "Description":"Admission Year 2020"
         },
     "zh":{
             "Name":"香港科技大學 - 大數據科技",
             "Link":"https://prog-crs.ust.hk/pgprog/2020-21/msc-bdt",
-            "Date":"2020 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
+            "Date":"2020 - 2022 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
             "Description":"Admission Year 2020"
         }
 },{
     "en":{
             "Name":"The Hong Kong Polytechnic University - Electronic and Information Engineering",
             "Link":"http://www.eie.polyu.edu.hk/",
-            "Date":"2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
+            "Date":"2015 - 2020",
             "Description":"Bachelor Degree - Studying Electronics, Circuit, Communication, \
              Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]"
         },
     "zh":{
             "Name":"香港理工大學 - 電子及資訊工程",
             "Link":"http://www.eie.polyu.edu.hk/",
-            "Date":"2015 - 2020 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
+            "Date":"2015 - 2020",
             "Description":"本科 - 學習電子，電路，通信，嵌入式控制器，PCB設計，機器學習等; [WGPA: 3.4]"
         }
 },{
