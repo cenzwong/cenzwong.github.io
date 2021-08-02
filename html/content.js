@@ -56,29 +56,29 @@ var workExJson =
     [
         {
             "en":{
-                "Pos_Com":"Summer Intern (Business Engineer Department) / Wuxi Murata Electronics Co., Ltd.",
+                "Pos_Com":"Engr Project Specialist I (Innovation Lab) / Hewlett Packard Enterprise",
                 "info":[{
                     "icon":"fa-globe",
-                    "Link":"https://www.murata.com/"
+                    "Link":"https://www.hpe.com/hk/en/home.html"
                 }],
-                "Date":"20 Jul 2019 - 30 Aug 2019",
+                "Date":"6 Jul 2020 - now",
                 "Outcome":[
-                    "Developed RPA (Robot Process Automation) program for HR department;",
-                    "Understood the industrial process of manufacturing;",
-                    "Acquired knowledge about the management culture of the company;"
+                    "Container Technology: HPE Ezmeral Container Platform, Docker, Kubernetes;",
+                    "Big Data & Machine Learning Operation: HPE Ezmeral MLOps, HPE Ezmeral Data Fabric, Apache Spark;",
+                    "IoT: HPE Edgeline, Apache Kafka;"
                 ]
             },
             "zh":{
-                "Pos_Com":"暑期實習 / 日本村田電子有限公司(無錫)",
+                "Pos_Com":"工程專案執行專員 (創新實驗室) / 慧與",
                 "info":[{
                     "icon":"fa-globe",
-                    "Link":"https://www.murata.com/"
+                    "Link":"https://www.hpe.com/hk/en/home.html"
                 }],
-                "Date":"20 Jul 2019 - 30 Aug 2019",
+                "Date":"6 Jul 2020 - now",
                 "Outcome":[
-                    "開發RPA（機器人過程自動化）程序;",
-                    "了解製造業的工業過程;",
-                    "了解公司的管理文化;"
+                    "Container Technology: HPE Ezmeral Container Platform, Docker, Kubernetes;",
+                    "Big Data & Machine Learning Operation: HPE Ezmeral MLOps, HPE Ezmeral Data Fabric, Apache Spark;",
+                    "IoT: HPE Edgeline, Apache Kafka;"
                 ]
             }
         },
