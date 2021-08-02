@@ -11,13 +11,25 @@ var eduExJson = [{
             "Name":"The Hong Kong University of Science and Technology - Big Data Technology",
             "Link":"https://prog-crs.ust.hk/pgprog/2020-21/msc-bdt",
             "Date":"2020 - 2022 <span class=\"w3-tag w3-teal w3-round\">planned</span>",
-            "Description":"Admission Year 2020"
+            "Description":"\
+            MSBD 5001 Foundations of Data Analytics<br>\
+            MSBD 5002 Data Mining and Knowledge Discovery<br>\
+            MSBD 5003 Big Data Computing<br>\
+            MSBD 5004 Mathematical Methods for Data Analysis<br>\
+            MSBD 5006 Quantitative Analysis of Financial Time Series<br>\
+            MSBD 5009 Parallel Programming<br>"
         },
     "zh":{
             "Name":"香港科技大學 - 大數據科技",
             "Link":"https://prog-crs.ust.hk/pgprog/2020-21/msc-bdt",
             "Date":"2020 - 2022 <span class=\"w3-tag w3-teal w3-round\">預計</span>",
-            "Description":"Admission Year 2020"
+            "Description":"\
+            MSBD 5001 數據分析基礎<br>\
+            MSBD 5002 數據挖掘與知識發現<br>\
+            MSBD 5003 大數據計算<br>\
+            MSBD 5004 數據分析數學方法<br>\
+            MSBD 5006 金融時間序列的定量分析<br>\
+            MSBD 5009 並行程序設計<br>"
         }
 },{
     "en":{
