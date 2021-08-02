@@ -33,7 +33,7 @@ var eduExJson = [{
              EIE4105 Multi-model Human Computer interaction Technology<br>\
              EIE4413 Digital Signal Processing<br>\
              EIE4435 Image and Audio Processing<br>\
-             EIE4433 Honors Project: Model Compression for On-Device Deep Learning<br>
+             EIE4433 Honors Project: Model Compression for On-Device Deep Learning<br>\
 
             "
         },
