@@ -61,11 +61,11 @@ var workExJson =
                     "icon":"fa-globe",
                     "Link":"https://www.hpe.com/hk/en/home.html"
                 }],
-                "Date":"6 Jul 2020 - now",
+                "Date":"6 Jul 2020 - <span class=\"w3-tag w3-teal w3-round\">Now</span>",
                 "Outcome":[
                     "Container Technology: HPE Ezmeral Container Platform, Docker, Kubernetes;",
                     "Big Data & Machine Learning Operation: HPE Ezmeral MLOps, HPE Ezmeral Data Fabric, Apache Spark;",
-                    "IoT: HPE Edgeline, Apache Kafka;"
+                    "IoT & Edge Computing: HPE Edgeline, Apache Kafka;"
                 ]
             },
             "zh":{
@@ -74,11 +74,11 @@ var workExJson =
                     "icon":"fa-globe",
                     "Link":"https://www.hpe.com/hk/en/home.html"
                 }],
-                "Date":"6 Jul 2020 - now",
+                "Date":"6 Jul 2020 - <span class=\"w3-tag w3-teal w3-round\">Now</span>",
                 "Outcome":[
-                    "Container Technology: HPE Ezmeral Container Platform, Docker, Kubernetes;",
-                    "Big Data & Machine Learning Operation: HPE Ezmeral MLOps, HPE Ezmeral Data Fabric, Apache Spark;",
-                    "IoT: HPE Edgeline, Apache Kafka;"
+                    "容器技術: HPE Ezmeral Container Platform, Docker, Kubernetes;",
+                    "大數據與機器學習運營: HPE Ezmeral MLOps, HPE Ezmeral Data Fabric, Apache Spark;",
+                    "物聯網與邊緣計算: HPE Edgeline, Apache Kafka;"
                 ]
             }
         },
