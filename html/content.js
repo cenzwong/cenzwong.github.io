@@ -25,17 +25,7 @@ var eduExJson = [{
             "Link":"http://www.eie.polyu.edu.hk/",
             "Date":"2015 - 2020",
             "Description":"Bachelor Degree - Studying Electronics, Circuit, Communication, \
-             Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]\
-             Course Highlight:<br>\
-             ---<br>\
-             EIE568 IoT - Tools and Application<br>\
-             EIE569 Sensor Networks<br>EIE4100 Computer Vision and Pattern Recognition<br>\
-             EIE4105 Multi-model Human Computer interaction Technology<br>\
-             EIE4413 Digital Signal Processing<br>\
-             EIE4435 Image and Audio Processing<br>\
-             EIE4433 Honors Project: Model Compression for On-Device Deep Learning<br>\
-
-            "
+             Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]"
         },
     "zh":{
             "Name":"香港理工大學 - 電子及資訊工程",
