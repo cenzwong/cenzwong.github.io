@@ -27,14 +27,14 @@ var eduExJson = [{
             "Description":"<p>Bachelor Degree[WGPA: 3.4]</p>\
                 <p>Studying Electronics, Circuit, Communication, \
                 Embedded Controller, PCB design, Machine Learning etc;</p>\
-                <p>Course Highlight:</p><hr>\
+                <p>Course Highlight:<br>---<br>\
                 EIE568 IoT - Tools and Application<br>\
                 EIE569 Sensor Networks<br>\
                 EIE4100 Computer Vision and Pattern Recognition<br>\
                 EIE4105 Multi-model Human Computer interaction Technology<br>\
                 EIE4413 Digital Signal Processing<br>\
                 EIE4435 Image and Audio Processing<br>\
-                EIE4433 Honors Project: Model Compression for On-Device Deep Learning<br>\
+                EIE4433 Honors Project: Model Compression for On-Device Deep Learning<br></p>\
                 "
         },
     "zh":{
