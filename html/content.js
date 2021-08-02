@@ -274,8 +274,8 @@ var infoJson =
         {
             "icon":"fa-briefcase",
             "word":{
-                "en":"Electronic and Information Engineering Student",
-                "zh":"電子與資訊工程專業學生"
+                "en":"Electronic and Information Engineering",
+                "zh":"電子與資訊工程專業"
             }
         },
         {
@@ -295,7 +295,7 @@ var infoJson =
         {
             "icon":"fa-phone",
             "word":{
-                "en":"+852 6158 5094, (+86 150 0204 3095)",
+                "en":"+852 6158 5094",
                 "zh":"+852 6158 5094, (+86 150 0204 3095)"
             }
         }
