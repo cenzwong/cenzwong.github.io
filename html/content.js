@@ -53,7 +53,17 @@ var eduExJson = [{
             "Name":"香港理工大學 - 電子及資訊工程",
             "Link":"http://www.eie.polyu.edu.hk/",
             "Date":"2015 - 2020",
-            "Description":"本科 - 學習電子，電路，通信，嵌入式控制器，PCB設計，機器學習等; [WGPA: 3.4]"
+            "Description":"<p>本科 [WGPA: 3.4]<br>\
+                學習電子，電路，通信，嵌入式控制器，PCB設計，機器學習等, </p>\
+                <p>課程重點:<br>---<br>\
+                EIE568 IoT - Tools and Application<br>\
+                EIE569 Sensor Networks<br>\
+                EIE4100 Computer Vision and Pattern Recognition<br>\
+                EIE4105 Multi-model Human Computer interaction Technology<br>\
+                EIE4413 Digital Signal Processing<br>\
+                EIE4435 Image and Audio Processing<br>\
+                EIE4433 Honors Project: Model Compression for On-Device Deep Learning<br></p>\
+                "
         }
 },{
     "en":{
