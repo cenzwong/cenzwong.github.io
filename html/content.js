@@ -24,8 +24,10 @@ var eduExJson = [{
             "Name":"The Hong Kong Polytechnic University - Electronic and Information Engineering",
             "Link":"http://www.eie.polyu.edu.hk/",
             "Date":"2015 - 2020",
-            "Description":"Bachelor Degree - Studying Electronics, Circuit, Communication, \
-             Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]"
+            "Description":"<p>Bachelor Degree</p>\
+                <p>Studying Electronics, Circuit, Communication, \
+                Embedded Controller, PCB design, Machine Learning etc; [WGPA: 3.4]</p>\        
+        "
         },
     "zh":{
             "Name":"香港理工大學 - 電子及資訊工程",
