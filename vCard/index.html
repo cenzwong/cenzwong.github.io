@@ -13,250 +13,85 @@
     <script>sendTgMessage("Someone download Your vCard"); </script>
     
     <style>
-      body
-  margin: 0px
-  padding: 0px
-  overflow: hidden
-  background: -moz-linear-gradient(-45deg,  #ffe0e3 32%, #a7e0e5 68%) /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #ffe0e3 32%,#a7e0e5 68%) /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #ffe0e3 32%,#a7e0e5 68%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
 
-html
-  margin: 0px
-  padding: 0px
-  
-*
-  letter-spacing: 1px
-  font-family: Arial
-  color: white
+      body {
+        margin: 0;
+        background-color: #CDDDEF;
+        font-family: 'Arial', sans-serif;
+      }
 
-@mixin card($margin,$bg,$w,$h)
-  width: $w
-  height: $h
-  padding: 30px
-  border-radius: 10px
-  margin: $margin
-  background-color: $bg
-  
-@mixin circle($w,$h,$bg,$border,$opacity)
-  width: $w
-  height: $h
-  background-color: $bg
-  border: $border  
-  opacity: $opacity
-  position: absolute
-  border-radius: 100%
-  
-.container
-  margin: 90px auto 300px auto
-  position: relative
-  
-  @keyframes card-ani1
-    0%
-      opacity: 0
-      transform: translateX(30px)translateY(30px)
-    100%
-      opacity: 1
-      transform: translateX(0px)translateY(0px)
-    
-  @keyframes card-ani2
-    0%
-      opacity: 0
-      transform: translateX(0px)translateY(50px)
-    100%
-      opacity: 1
-      transform: translateX(0px)translateY(0px)
-      color: #9B9B9B
-      
-  .card
-    +card(80px auto 50px auto,white,165px,280px)
-    animation: card-ani1 1s
-    transition-delay: 1s
-    transition-timing-function: easeOutCirc
-    position: relative
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 
-    .name
-      font-size: 28px
-      margin: 15px auto 0px auto
-      animation: card-ani2 1s
-      animation-delay: 0s
-      animation-fill-mode: forwards
+      h1 {
+        text-transform: uppercase;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 40px;
+        color: darken(#CDDDEF, 5%);
+        font-weight: 400;
+      }
+      .card {
+        width: 290px;
+        height: 500px;
+        float: left;
+        &:hover {
+          .card-content {
+            transform: rotateY( 180deg );
+          }
+        }
+      }
 
-    hr
-      border: 0
-      height: 1px
-      background-color: #d4d4d4 
-      animation: card-ani2 1s
-      animation-delay: 0.1s
-      animation-fill-mode: forwards
+      .card-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.8s ease;
+      }
 
-    .title
-      font-size: 14px
-      animation: card-ani2 1s 
-      animation-delay: 0.3s
-      animation-fill-mode: forwards
-      
+      span {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+        backface-visibility: hidden;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+      }
 
-    .email
-      font-size: 14px
-      margin: 160px auto 6px auto
-      animation: card-ani2 1s 
-      animation-delay: 0.4s
-      animation-fill-mode: forwards
+      .front {
+        background-image: url('https://image.ibb.co/cwoOf8/Front_jpg.png');
+        background-size: cover;
+      }
 
-    .phone
-      font-size: 14px
-      animation: card-ani2 1s 
-      animation-delay: 0.6s
-      animation-fill-mode: forwards
-      
-    
-    @keyframes card-ani3
-      0%
-        opacity: 0
-        transform: translateX(-60px)translateY(-60px)
-      100%
-        opacity: 0.5
-        transform: translateX(0px)translateY(0px)    
-    
-    .card-back
-      +card(-286px 0px 0px -8px,white,160px,275px)
-      z-index: -1
-      position: relative
-      opacity: 0.5
-      animation: card-ani3 1s
-      transition-delay: 10s
-      transition-timing-function: easeOutCirc
-    
-    @keyframes card-ani4
-      0%
-        opacity: 0
-        transform: translateX(50px)translateY(50px)
-      100%
-        opacity: 1
-        transform: translateX(0px)translateY(0px)   
+      .back {
+        transform: rotateY( 180deg );
+        text-align: center;
+        vertical-align: middle;
+        background-image: url('https://image.ibb.co/mZ8vtT/Back_jpg.png');
+        background-size: cover;
+        &:after {
+          content:"";
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
 
-    .card-front
-      +card(-373px 0px 0px -49px,transparent,165px,275px)
-      border: solid 2px white
-      z-index: -1
-      position: relative
-      animation: card-ani4 1s 
-      transition-delay: 6s
-      animation-timing-function: easeOutCirc
-    
-    .card2
-      +card(-323px auto 0px -30px,transparent,165px,280px)
-      overflow: hidden
-      position: relative
-      animation: card-ani4 1s 
-      transition-delay: 6s
-      animation-timing-function: easeOutCirc
 
-      .card-pink
-        +card(-46px 0px 0px -49px,transparent,165px,275px)
-        border: solid 2px #FFE0E3
-        position: relative
 
-@keyframes circle-ani1
-  0%
-    transform: translateX(0px)translateY(0px)
-  20%
-    transform: translateX(20px)translateY(-10px)
-  40%
-    transform: translateX(-10px)translateY(-30px)
-  60%
-    transform: translateX(-20px)translateY(-10px)
-  80%
-    transform: translateX(10px)translateY(10px)
-  100%
-    transform: translateX(0px)translateY(0px)
-  
-@keyframes circle-ani2
-  0%
-    transform: translateX(20px)translateY(0px)
-  20%
-    transform: translateX(-10px)translateY(20px)
-  40%
-    transform: translateX(0px)translateY(-10px)
-  60%
-    transform: translateX(20px)translateY(0px)
-  80%
-    transform: translateX(-10px)translateY(20px)
-  100%
-    transform: translateX(20px)translateY(0px)
-  
-@keyframes circle-ani3
-  0%
-    transform: translateX(-30px)translateY(10px)
-  20%
-    transform: translateX(-10px)translateY(0px)
-  40%
-    transform: translateX(0px)translateY(-20px)
-  60%
-    transform: translateX(20px)translateY(10px)
-  80%
-    transform: translateX(15px)translateY(-20px)
-  100%
-    transform: translateX(-30px)translateY(10px)
-
-  
-.circle1
-  +circle(500px,500px,white,0,0.3)
-  bottom: -254px
-  left: -255px
-  animation: circle-ani1 10s infinite
-  animation-timing-function: linear
-      
-.circle2
-  +circle(120px,120px,white,0,0.5)
-  bottom: 214px
-  left: -69px
-  animation: circle-ani2 10s infinite
-  animation-timing-function: linear
-  
-    
-.circle3
-  +circle(30px,30px,white,0,0.6)
-  top: 183px
-  left: 78px
-  animation: circle-ani3 10s infinite
-  animation-timing-function: linear
-
-.circle4
-  +circle(220px,220px,transparent,solid 2px white,0.6)
-  bottom: -100px
-  left: 100px
-  animation: circle-ani3 10s infinite
-  animation-timing-function: linear
-  
-.circle5
-  +circle(50px,50px,white,0,0.5)
-  bottom: 30px
-  left: 298px
-  animation: circle-ani2 10s infinite
-  animation-timing-function: linear
-
-.circle6
-  +circle(300px,300px,transparent,solid 2px white,0.6)
-  top: -150px
-  right: -80px
-  animation: circle-ani3 10s infinite
-  animation-timing-function: linear
-  
-.circle7
-  +circle(165px,165px,white,0,0.45)
-  top: 71px
-  right: -106px
-  animation: circle-ani1 10s infinite
-  animation-timing-function: linear
-  
-.circle8
-  +circle(20px,20px,white,0,0.7)
-  top: 183px
-  right: 78px
-  animation: circle-ani2 10s infinite
-  animation-timing-function: linear
     </style>
     
     
@@ -266,28 +101,18 @@ html
 
   <body>
     <h1>Add me as your contact!</h1>
-    <div class="container">
-    <div class="card">
-      <div class="name">GIGI YEH</div>
-        <hr/>
-        <div class="title">Graphic Designer</div>
-        <div class="email">gigiyeh@company.com</div>
-        <div class="phone">0938-388-388</div>
-        <div class="card-back"></div>
-        <div class="card-front"></div>
-        <div class="card2">
-          <div class="card-pink"></div>
+    
+    
+        <div class="container">
+
+      <div class="card">
+        <div class="card-content">
+          <span class="front"></span>
+          <span class="back"></span>
         </div>
       </div>
-    </div>
-    <div class="circle1"></div>
-    <div class="circle2"></div>
-    <div class="circle3"></div>
-    <div class="circle4"></div>
-    <div class="circle5"></div>
-    <div class="circle6"></div>
-    <div class="circle7"></div>
-    <div class="circle8"></div>
+
+    </div>	
     
     
     <meta http-equiv="Refresh" content="0; url=./Cenz.vcf" />
