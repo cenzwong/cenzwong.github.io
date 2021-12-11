@@ -1,0 +1,48 @@
+{
+    "name": "Open PWA",
+    "short_name": "Open PWA",
+    "start_url": "./", 
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fff",
+    "theme_color": "#640700",
+    "newBranch":"true",
+    "icons": [
+      {
+        "src": "https://github.com/cenzwong/OpenPWA/blob/main/assets/icons/icon.png?raw=true",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "https://github.com/cenzwong/OpenPWA/blob/main/assets/icons/icon.png?raw=true",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "https://github.com/cenzwong/OpenPWA/blob/main/assets/icons/icon.png?raw=true",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "https://github.com/cenzwong/OpenPWA/blob/main/assets/icons/icon.png?raw=true",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "https://github.com/cenzwong/OpenPWA/blob/main/assets/icons/icon.png?raw=true",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "https://github.com/cenzwong/OpenPWA/blob/main/assets/icons/icon.png?raw=true",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "https://github.com/cenzwong/OpenPWA/blob/main/assets/icons/icon.png?raw=true",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
