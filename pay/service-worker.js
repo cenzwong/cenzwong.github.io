@@ -2,7 +2,7 @@ let cacheName = "OpenGithubPWA";// 👈 any unique name
 
 let filesToCache = [
   "/pay/", // 👈 your repository name , both slash are important
-  "sw.js",
+  "service-worker.js",
   "https://raw.githubusercontent.com/cenzwong/OpenPWA/main/js/main.js",
   "https://raw.githubusercontent.com/cenzwong/OpenPWA/main/js/install-handler.js",
   "https://raw.githubusercontent.com/cenzwong/OpenPWA/main/js/settings.js",
