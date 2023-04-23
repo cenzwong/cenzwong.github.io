@@ -1,8 +1,24 @@
 var DropdownData = [
+    {
+        "Year" : "2022",
+        "Time":["July"],
+        "Activities/Experience":[   
+            "Consultant in Data Engineering @ Ekimetrics"
+                                ]
+    },
+    {
+        "Year" : "2021",
+        "Time":["Dec"],
+        "Activities/Experience":[   
+            "Junior Consultant in Data Engineering @ Ekimetrics"
+                                ]
+    },
      {
         "Year" : "2020",
-        "Time":["Jun","May","Apr", "Apr","Mar","Jan"],
-        "Activities/Experience":[   "Acquiring<a href='https://www.coursera.org/account/accomplishments/professional-cert/7N7T7A29X3QK' target='_blank'> IBM Data Science Specialization Certificate</a> @ Coursera\
+        "Time":["Jul","Jun","May","Apr", "Apr","Mar","Jan"],
+        "Activities/Experience":[   
+            "Engr Project Specialist I @ HPE HK Innovation Lab",
+            "Acquiring<a href='https://www.coursera.org/account/accomplishments/professional-cert/7N7T7A29X3QK' target='_blank'> IBM Data Science Specialization Certificate</a> @ Coursera\
                                     <p>Earned after completing ...\
                                     <ol style='margin-left: 10px; padding-left: 10px;'>\
                                     <li><a href='https://www.coursera.org/account/accomplishments/verify/AUUGQPDLYH7C' target='_blank'>What is Data Science?</a></li>\
