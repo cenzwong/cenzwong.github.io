@@ -1,16 +1,32 @@
 var DropdownData = [
     {
-        "Year" : "2022",
-        "Time":["July"],
+        "Year" : "2023",
+        "Time":["April","Mar"],
         "Activities/Experience":[   
-            "Consultant in Data Engineering @ Ekimetrics"
+            "Microsoft Certified: Azure Solutions Architect Expert - AZ-305",
+            "Microsoft Certified: Azure Administrator Associate - AZ-104"
+                                ]
+    },
+    {
+        "Year" : "2022",
+        "Time":["Dec", "Oct","July" ,"July", "July", "Jan", "Jan","Jan"],
+        "Activities/Experience":[   
+            "AWS Certified Data Analytics",
+            "Databricks Lakehouse Fundamentals",
+            "AWS Certified Cloud Practitioner",
+            "Consultant in Data Engineering @ Ekimetrics",
+            "Microsoft Certified: Azure AI Fundamentals - AI-900",
+            "Alibaba Coud Certification Associate - Big Data",
+            "Databricks Certified: Developer Foundations",
+            "Microsoft Certified: Azure Fundamentals - AZ-900"
                                 ]
     },
     {
         "Year" : "2021",
-        "Time":["Dec"],
+        "Time":["Dec", "Oct"],
         "Activities/Experience":[   
-            "Junior Consultant in Data Engineering @ Ekimetrics"
+            "Junior Consultant in Data Engineering @ Ekimetrics",
+            "Acquiring HPE Product Certified - Containers"
                                 ]
     },
      {
